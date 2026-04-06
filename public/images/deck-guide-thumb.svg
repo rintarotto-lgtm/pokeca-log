@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#90e0ef;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0077b6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#023e8a;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="dots" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.08)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" rx="12" ry="12" fill="url(#bg)"/>
+  <rect width="800" height="450" rx="12" ry="12" fill="url(#dots)"/>
+  <!-- Decorative elements -->
+  <circle cx="650" cy="100" r="90" fill="rgba(144,224,239,0.1)" />
+  <circle cx="150" cy="380" r="70" fill="rgba(144,224,239,0.08)" />
+  <!-- Card stack illustration -->
+  <rect x="100" y="140" width="120" height="170" rx="8" ry="8" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.15)" stroke-width="1" transform="rotate(-10 160 225)"/>
+  <rect x="110" y="135" width="120" height="170" rx="8" ry="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="1" transform="rotate(-5 170 220)"/>
+  <rect x="120" y="130" width="120" height="170" rx="8" ry="8" fill="rgba(255,255,255,0.16)" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- Sparkles -->
+  <polygon points="500,80 504,95 519,95 507,104 511,119 500,110 489,119 493,104 481,95 496,95" fill="#90e0ef" opacity="0.6" filter="url(#glow)"/>
+  <polygon points="680,320 683,330 693,330 685,336 688,346 680,340 672,346 675,336 667,330 677,330" fill="#90e0ef" opacity="0.4" filter="url(#glow)"/>
+  <!-- Main text -->
+  <text x="480" y="190" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="48" font-weight="bold" fill="#ffffff" filter="url(#glow)">デッキガイド</text>
+  <!-- Subtitle -->
+  <text x="480" y="250" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="22" fill="#90e0ef">構築のコツと戦略</text>
+  <!-- Decorative line -->
+  <line x1="330" y1="280" x2="630" y2="280" stroke="#90e0ef" stroke-width="1" opacity="0.4"/>
+  <!-- Bottom text -->
+  <text x="480" y="330" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="18" fill="rgba(255,255,255,0.6)">ポケモンカードゲーム</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:pockecolle.com)",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(export PATH=\"/usr/local/bin:$PATH\")",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install recharts)",
+      "Bash(for f:*)",
+      "Bash(do sed:*)",
+      "Bash(done)",
+      "Bash(ls /Users/mac/Desktop/自動化/ポケカ/public/images/cards/ /Users/mac/Desktop/自動化/ポケカ/public/images/*.svg)",
+      "WebFetch(domain:pokeca-chart.com)",
+      "Bash(gh auth:*)",
+      "Bash(git --version)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"initial: ポケカろぐサイト構築\")"
+    ]
+  }
+}

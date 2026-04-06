@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "pokeca-dev",
+      "runtimeExecutable": "/usr/local/bin/node",
+      "runtimeArgs": ["node_modules/next/dist/bin/next", "dev"],
+      "env": { "PATH": "/usr/local/bin:/usr/bin:/bin" },
+      "port": 3000
+    }
+  ]
+}

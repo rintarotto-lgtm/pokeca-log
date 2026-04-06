@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="450" viewBox="0 0 800 450">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e0aaff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7b2cbf;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#240046;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="dots" patternUnits="userSpaceOnUse" width="30" height="30">
+      <circle cx="15" cy="15" r="1.5" fill="rgba(255,255,255,0.1)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="450" rx="12" ry="12" fill="url(#bg)"/>
+  <rect width="800" height="450" rx="12" ry="12" fill="url(#dots)"/>
+  <!-- Decorative circles -->
+  <circle cx="650" cy="100" r="80" fill="rgba(224,170,255,0.1)" />
+  <circle cx="150" cy="350" r="60" fill="rgba(224,170,255,0.08)" />
+  <circle cx="700" cy="350" r="120" fill="rgba(224,170,255,0.05)" />
+  <!-- Sparkles -->
+  <polygon points="200,80 204,95 219,95 207,104 211,119 200,110 189,119 193,104 181,95 196,95" fill="#e0aaff" opacity="0.6" filter="url(#glow)"/>
+  <polygon points="600,350 603,360 613,360 605,366 608,376 600,370 592,376 595,366 587,360 597,360" fill="#e0aaff" opacity="0.4" filter="url(#glow)"/>
+  <!-- Main text -->
+  <text x="400" y="190" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="52" font-weight="bold" fill="#ffffff" filter="url(#glow)">変幻の仮面</text>
+  <!-- Subtitle -->
+  <text x="400" y="250" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="24" fill="#e0aaff">パック開封シミュレーター</text>
+  <!-- Decorative line -->
+  <line x1="250" y1="280" x2="550" y2="280" stroke="#e0aaff" stroke-width="1" opacity="0.5"/>
+  <!-- Bottom text -->
+  <text x="400" y="330" text-anchor="middle" font-family="'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif" font-size="18" fill="rgba(255,255,255,0.7)">ポケモンカードゲーム</text>
+  <!-- Card icons at bottom -->
+  <rect x="320" y="360" width="40" height="56" rx="4" ry="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="380" y="360" width="40" height="56" rx="4" ry="4" fill="rgba(255,255,255,0.15)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+  <rect x="440" y="360" width="40" height="56" rx="4" ry="4" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+</svg>
