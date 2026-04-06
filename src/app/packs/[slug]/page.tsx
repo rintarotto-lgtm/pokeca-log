@@ -5,10 +5,7 @@ import ArticleCard from "@/components/ArticleCard";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-const packInfo: Record<string, { name: string; releaseDate: string }> = {
-  "chouden-breaker": { name: "超電ブレイカー", releaseDate: "2026年3月28日" },
-  "hengen-no-kamen": { name: "変幻の仮面", releaseDate: "2025年12月15日" },
-};
+const packInfo: Record<string, { name: string; releaseDate: string }> = {};
 
 type Props = { params: Promise<{ slug: string }> };
 

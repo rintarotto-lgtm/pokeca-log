@@ -26,6 +26,15 @@ export default function PricesPage() {
         カード価格比較
       </h1>
 
+      {prices.length === 0 && (
+        <div className="bg-white rounded-lg shadow-sm p-10 text-center">
+          <div className="text-4xl mb-4">💰</div>
+          <p className="text-gray-600">
+            カード価格データは準備中です。もうしばらくお待ちください。
+          </p>
+        </div>
+      )}
+
       {packs.map((packName) => {
         const packCards = prices.filter((p) => p.packName === packName);
         return (

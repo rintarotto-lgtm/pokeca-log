@@ -8,20 +8,46 @@ export default function Home() {
   const popularArticles = getPopularArticles();
   const prices = getAllPrices().slice(0, 5);
 
+  const isEmpty = articles.length === 0 && prices.length === 0;
+
+  if (isEmpty) {
+    return (
+      <div className="max-w-3xl mx-auto px-4 py-20 text-center">
+        <div className="text-6xl mb-6">📒</div>
+        <h1 className="text-2xl font-bold text-gray-900 mb-4">
+          ポケカろぐ、準備中です
+        </h1>
+        <p className="text-gray-600 leading-relaxed mb-8">
+          ポケモンカードの最新情報・カード価格比較・新弾情報をお届けする
+          <br className="hidden sm:block" />
+          ブログメディアを準備中です。もうしばらくお待ちください。
+        </p>
+        <div className="inline-flex flex-col gap-2 bg-white rounded-lg shadow-sm px-6 py-4 text-sm text-gray-600">
+          <div className="flex items-center gap-2 justify-center">
+            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse" />
+            <span>コンテンツ準備中</span>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="max-w-6xl mx-auto px-4 py-8">
       {/* 最新記事 */}
-      <section className="mb-12">
-        <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-          <span className="w-1 h-6 bg-blue-600 rounded-full" />
-          最新記事
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {articles.map((article) => (
-            <ArticleCard key={article.slug} article={article} />
-          ))}
-        </div>
-      </section>
+      {articles.length > 0 && (
+        <section className="mb-12">
+          <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+            <span className="w-1 h-6 bg-blue-600 rounded-full" />
+            最新記事
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {articles.map((article) => (
+              <ArticleCard key={article.slug} article={article} />
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* 人気記事 */}
       {popularArticles.length > 0 && (
@@ -117,42 +143,6 @@ export default function Home() {
           </div>
         </section>
       )}
-
-      {/* パック別セクション */}
-      <section>
-        <h2 className="text-xl font-bold text-gray-900 mb-6 flex items-center gap-2">
-          <span className="w-1 h-6 bg-purple-500 rounded-full" />
-          拡張パック
-        </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            {
-              slug: "chouden-breaker",
-              name: "超電ブレイカー",
-              date: "2026年3月発売",
-            },
-            {
-              slug: "hengen-no-kamen",
-              name: "変幻の仮面",
-              date: "2025年12月発売",
-            },
-          ].map((pack) => (
-            <Link
-              key={pack.slug}
-              href={`/packs/${pack.slug}`}
-              className="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow flex items-center gap-4"
-            >
-              <div className="w-16 h-16 bg-gradient-to-br from-indigo-100 to-purple-100 rounded-lg flex items-center justify-center text-3xl shrink-0">
-                📦
-              </div>
-              <div>
-                <h3 className="font-bold text-gray-900">{pack.name}</h3>
-                <p className="text-xs text-gray-500 mt-1">{pack.date}</p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
     </div>
   );
 }
