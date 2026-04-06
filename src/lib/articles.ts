@@ -25,6 +25,7 @@ export function getAllArticles(): Article[] {
         thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
         popular: data.popular ?? false,
         packSlug: data.packSlug,
+        chartCardId: data.chartCardId,
       } satisfies Article;
     });
   return articles.sort(
@@ -49,6 +50,7 @@ export function getArticleBySlug(slug: string): ArticleWithContent | null {
         thumbnail: data.thumbnail ?? "/images/default-thumb.svg",
         popular: data.popular ?? false,
         packSlug: data.packSlug,
+        chartCardId: data.chartCardId,
         content,
       };
     }

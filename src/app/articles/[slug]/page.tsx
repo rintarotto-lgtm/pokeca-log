@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { renderMarkdown } from "@/lib/markdown";
+import { getCardHistory } from "@/lib/cardHistory";
+import CardPriceHistoryChart from "@/components/CardPriceHistoryChart";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -36,6 +38,10 @@ export default async function ArticlePage({ params }: Props) {
   const category = CATEGORIES.find((c) => c.id === article.category);
 
   const htmlContent = renderMarkdown(article.content);
+
+  const chartData = article.chartCardId
+    ? getCardHistory(article.chartCardId)
+    : null;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -96,6 +102,8 @@ export default async function ArticlePage({ params }: Props) {
         <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-8 flex items-center justify-center text-6xl opacity-50">
           🎴
         </div>
+
+        {chartData && <CardPriceHistoryChart data={chartData} />}
 
         <div
           className="prose max-w-none"
