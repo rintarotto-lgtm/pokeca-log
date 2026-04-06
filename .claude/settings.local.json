@@ -15,7 +15,22 @@
       "Bash(git --version)",
       "Bash(git init:*)",
       "Bash(git add:*)",
-      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"initial: ポケカろぐサイト構築\")"
+      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"initial: ポケカろぐサイト構築\")",
+      "Bash(git remote:*)",
+      "Bash(git push:*)",
+      "Bash(npm_config_cache=/tmp/npm-cache npx next build)",
+      "Bash(node /Users/mac/Desktop/自動化/ポケカ/node_modules/next/dist/bin/next build)",
+      "Bash(node /Users/mac/Desktop/自動化/ポケカ/node_modules/next/dist/bin/next build --webpack)",
+      "Bash(grep -l 'Expected workStore' /Users/mac/Desktop/自動化/ポケカ/node_modules/next/dist/server/app-render/*.js)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install next@^15.5.0 eslint-config-next@^15.5.0)",
+      "Bash(find /Users/mac/Desktop/自動化/ポケカ/node_modules -name package.json -path */react/package.json)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm uninstall recharts next-mdx-remote remark remark-html)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install react@18.3.1 react-dom@18.3.1 @types/react@^18 @types/react-dom@^18)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install --save-dev @eslint/eslintrc)",
+      "Read(//usr/local/Cellar/**)",
+      "Read(//opt/homebrew/Cellar/**)",
+      "Read(//Users/mac/**)",
+      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"fix: TypeScriptエラー修正、Next.js 15ダウングレード、Recharts→純SVGチャート\")"
     ]
   }
 }

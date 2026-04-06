@@ -4,7 +4,6 @@ import PriceTable from "@/components/PriceTable";
 import PriceChart from "@/components/PriceChart";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { SITE_NAME } from "@/lib/constants";
 
 type Props = { params: Promise<{ cardId: string }> };
 
