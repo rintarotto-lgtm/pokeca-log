@@ -5,8 +5,8 @@ export const SITE_URL = "https://pokeca-log.com";
 
 export const NAV_LINKS = [
   { label: "ホーム", href: "/" },
-  { label: "カード価格", href: "/prices" },
-  { label: "拡張パック", href: "/packs" },
+  { label: "記事一覧", href: "/articles" },
+  { label: "サイトについて", href: "/about" },
 ];
 
 export const SHOPS = [

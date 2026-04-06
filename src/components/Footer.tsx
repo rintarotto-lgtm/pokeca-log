@@ -29,6 +29,14 @@ export default function Footer() {
                   </Link>
                 </li>
               ))}
+              <li>
+                <Link
+                  href="/about"
+                  className="text-sm hover:text-white transition-colors"
+                >
+                  サイトについて
+                </Link>
+              </li>
             </ul>
           </div>
 

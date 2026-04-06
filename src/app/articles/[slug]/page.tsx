@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
+import { renderMarkdown } from "@/lib/markdown";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -34,20 +35,7 @@ export default async function ArticlePage({ params }: Props) {
 
   const category = CATEGORIES.find((c) => c.id === article.category);
 
-  // Simple markdown-to-html (headings, bold, lists, tables, paragraphs)
-  const htmlContent = article.content
-    .split("\n")
-    .map((line) => {
-      if (line.startsWith("### ")) return `<h3 class="text-lg font-bold mt-6 mb-2 text-gray-900">${line.slice(4)}</h3>`;
-      if (line.startsWith("## ")) return `<h2 class="text-xl font-bold mt-8 mb-3 text-gray-900">${line.slice(3)}</h2>`;
-      if (line.startsWith("| ")) return line;
-      if (line.startsWith("- ")) return `<li class="ml-4 text-gray-700">${line.slice(2)}</li>`;
-      if (line.match(/^\d+\. /)) return `<li class="ml-4 text-gray-700 list-decimal">${line.replace(/^\d+\. /, "")}</li>`;
-      if (line.trim() === "") return "<br />";
-      return `<p class="text-gray-700 leading-relaxed mb-2">${line}</p>`;
-    })
-    .join("\n")
-    .replace(/\*\*(.+?)\*\*/g, '<strong class="font-bold">$1</strong>');
+  const htmlContent = renderMarkdown(article.content);
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">

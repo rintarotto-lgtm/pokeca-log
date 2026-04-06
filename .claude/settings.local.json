@@ -31,7 +31,10 @@
       "Read(//opt/homebrew/Cellar/**)",
       "Read(//Users/mac/**)",
       "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"fix: TypeScriptエラー修正、Next.js 15ダウングレード、Recharts→純SVGチャート\")",
-      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"remove: ダミー記事・価格データを全削除、準備中ページに変更\")"
+      "Bash(git -c user.email=\"pokeca@example.com\" -c user.name=\"pokeca\" commit -m \"remove: ダミー記事・価格データを全削除、準備中ページに変更\")",
+      "WebSearch",
+      "Bash(rm -f .git/index.lock)",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 5本の記事追加・aboutページ追加・トップページ改修・Markdown改善')"
     ]
   }
 }
