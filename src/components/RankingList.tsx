@@ -67,18 +67,19 @@ function RankingItem({ card }: { card: RankingCard }) {
 
   return (
     <Wrapper>
-      <article className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
-        <div className="flex flex-col sm:flex-row">
-          {/* 左：順位＋カード画像 */}
-          <div className="sm:w-48 shrink-0 bg-gradient-to-br from-orange-50 to-amber-50 p-4 flex sm:flex-col items-center justify-center gap-3 sm:gap-4 border-b sm:border-b-0 sm:border-r border-orange-100">
+      <article className="bg-white rounded-xl sm:rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+        {/* モバイル：上部にバッジ＋情報、PC：左右分割 */}
+        <div className="flex flex-row sm:flex-row">
+          {/* 左：順位＋カード画像（モバイルは小さめ） */}
+          <div className="w-20 sm:w-44 shrink-0 bg-gradient-to-br from-orange-50 to-amber-50 p-2 sm:p-4 flex flex-col items-center justify-center gap-2 sm:gap-3 border-r border-orange-100">
             <RankBadge rank={card.rank} />
             {card.image && (
-              <div className="w-20 sm:w-32 aspect-[5/7] relative rounded-md overflow-hidden bg-white shadow">
+              <div className="w-14 sm:w-28 aspect-[5/7] relative rounded overflow-hidden bg-white shadow">
                 <Image
                   src={card.image}
                   alt={`${card.name} ${card.rarity}`}
                   fill
-                  sizes="(max-width: 640px) 80px, 128px"
+                  sizes="(max-width: 640px) 56px, 112px"
                   className="object-contain"
                 />
               </div>
@@ -86,48 +87,56 @@ function RankingItem({ card }: { card: RankingCard }) {
           </div>
 
           {/* 右：情報 */}
-          <div className="flex-1 p-4 sm:p-5">
-            <div className="flex items-center gap-2 flex-wrap mb-2">
-              <span className={`inline-block px-2.5 py-0.5 text-xs font-bold rounded ${rarityCls}`}>
+          <div className="flex-1 p-3 sm:p-5 min-w-0">
+            <div className="flex items-center gap-1.5 flex-wrap mb-1.5">
+              <span
+                className={`inline-block px-2 py-0.5 text-[10px] sm:text-xs font-bold rounded ${rarityCls}`}
+              >
                 {card.rarity}
               </span>
-              <span className="text-xs text-gray-500 font-mono">
+              <span className="text-[10px] sm:text-xs text-gray-500 font-mono">
                 {card.cardNumber}
               </span>
-              <span className={`inline-block px-2 py-0.5 text-[10px] font-bold rounded ${trend.cls}`}>
+              <span
+                className={`inline-block px-1.5 py-0.5 text-[9px] sm:text-[10px] font-bold rounded ${trend.cls}`}
+              >
                 {trend.label}
               </span>
             </div>
 
-            <h3 className="text-lg sm:text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors mb-1">
+            <h3 className="text-sm sm:text-xl font-bold text-gray-900 group-hover:text-orange-600 transition-colors mb-1 leading-tight">
               {card.name} {card.rarity}
             </h3>
 
-            <p className="text-xs text-orange-600 font-bold mb-3">
+            <p className="text-[11px] sm:text-xs text-orange-600 font-bold mb-2 sm:mb-3 leading-tight">
               💡 {card.highlight}
             </p>
 
-            <div className="grid grid-cols-2 gap-2 mb-3">
-              <div className="bg-cyan-50 rounded px-3 py-2 border border-cyan-100">
-                <div className="text-[10px] text-gray-600 font-medium">販売価格</div>
-                <div className="text-base font-bold text-cyan-700 leading-tight">
+            <div className="grid grid-cols-2 gap-1.5 sm:gap-2 mb-2 sm:mb-3">
+              <div className="bg-cyan-50 rounded px-2 sm:px-3 py-1.5 sm:py-2 border border-cyan-100">
+                <div className="text-[9px] sm:text-[10px] text-gray-600 font-medium">
+                  販売価格
+                </div>
+                <div className="text-sm sm:text-base font-bold text-cyan-700 leading-tight">
                   {formatYen(card.salePrice)}
                 </div>
               </div>
-              <div className="bg-pink-50 rounded px-3 py-2 border border-pink-100">
-                <div className="text-[10px] text-gray-600 font-medium">買取価格</div>
-                <div className="text-base font-bold text-pink-700 leading-tight">
+              <div className="bg-pink-50 rounded px-2 sm:px-3 py-1.5 sm:py-2 border border-pink-100">
+                <div className="text-[9px] sm:text-[10px] text-gray-600 font-medium">
+                  買取価格
+                </div>
+                <div className="text-sm sm:text-base font-bold text-pink-700 leading-tight">
                   {formatYen(card.buyPrice)}
                 </div>
               </div>
             </div>
 
-            <p className="text-sm text-gray-600 leading-relaxed line-clamp-3">
+            <p className="hidden sm:block text-sm text-gray-600 leading-relaxed line-clamp-3">
               {card.comment}
             </p>
 
             {card.articleSlug && (
-              <div className="mt-3 text-xs text-orange-600 font-bold">
+              <div className="mt-2 sm:mt-3 text-[11px] sm:text-xs text-orange-600 font-bold">
                 詳しい価格推移を見る →
               </div>
             )}

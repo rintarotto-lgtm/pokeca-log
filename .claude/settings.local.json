@@ -57,7 +57,8 @@
       "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 大型UI改修 - オレンジ基調・TOC・ランキングカード・吹き出しボックス・トレンド調査ツール')",
       "Bash(curl -sLI https://pokeca-log.com/articles/ninja-spinner-atari-matome)",
       "Bash(curl -sL https://www.pokeca-log.com/articles/ninja-spinner-atari-matome)",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: TS正規表現の/sフラグを使わない書き方に変更（ES2017互換）')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: TS正規表現の/sフラグを使わない書き方に変更（ES2017互換）')",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 4本の新規記事追加（チラチーノ・ホミカ・30周年・新弾予想）+スマホ表示改善')"
     ]
   }
 }

@@ -24,30 +24,34 @@ export default function Home() {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="max-w-6xl mx-auto px-3 sm:px-4 py-5 sm:py-8">
       {/* ヒーローセクション */}
-      <section className="bg-gradient-to-br from-orange-500 via-orange-400 to-amber-400 rounded-2xl p-6 sm:p-10 mb-10 text-white shadow-lg relative overflow-hidden">
-        <div className="absolute -right-10 -top-10 text-9xl opacity-10">📒</div>
+      <section className="bg-gradient-to-br from-orange-500 via-orange-400 to-amber-400 rounded-xl sm:rounded-2xl p-5 sm:p-10 mb-8 sm:mb-10 text-white shadow-lg relative overflow-hidden">
+        <div className="absolute -right-10 -top-10 text-9xl opacity-10 select-none">
+          📒
+        </div>
         <div className="relative">
-          <h1 className="text-2xl sm:text-3xl font-black mb-3 tracking-tight">
-            ポケカの「今」がわかる、ポケカろぐ。
+          <h1 className="text-xl sm:text-3xl font-black mb-2 sm:mb-3 tracking-tight leading-snug">
+            ポケカの「今」がわかる、
+            <br className="sm:hidden" />
+            ポケカろぐ。
           </h1>
-          <p className="text-white/90 text-sm sm:text-base leading-relaxed max-w-2xl">
+          <p className="text-white/90 text-xs sm:text-base leading-relaxed max-w-2xl">
             ポケモンカードの相場推移・新弾の当たり情報・初心者ガイドを
             <br className="hidden sm:block" />
             データとビジュアルで分かりやすくお届けするブログメディアです。
           </p>
-          <div className="mt-5 flex gap-3 flex-wrap">
+          <div className="mt-4 sm:mt-5 flex gap-2 sm:gap-3 flex-wrap">
             <Link
               href="/articles"
-              className="inline-flex items-center gap-1 px-5 py-2.5 bg-white text-orange-600 font-bold rounded-lg shadow hover:shadow-md transition-shadow text-sm"
+              className="inline-flex items-center gap-1 px-4 sm:px-5 py-2 sm:py-2.5 bg-white text-orange-600 font-bold rounded-lg shadow hover:shadow-md transition-shadow text-xs sm:text-sm"
             >
               📖 記事一覧を見る
             </Link>
             {articles[0] && (
               <Link
                 href={`/articles/${articles[0].slug}`}
-                className="inline-flex items-center gap-1 px-5 py-2.5 bg-orange-700/40 backdrop-blur text-white font-bold rounded-lg hover:bg-orange-700/60 transition-colors text-sm border border-white/30"
+                className="inline-flex items-center gap-1 px-4 sm:px-5 py-2 sm:py-2.5 bg-orange-700/40 backdrop-blur text-white font-bold rounded-lg hover:bg-orange-700/60 transition-colors text-xs sm:text-sm border border-white/30"
               >
                 🆕 最新記事を読む
               </Link>

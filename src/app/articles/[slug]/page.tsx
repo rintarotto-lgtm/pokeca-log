@@ -52,7 +52,7 @@ export default async function ArticlePage({ params }: Props) {
   const ranking = article.rankingId ? getRanking(article.rankingId) : null;
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
+    <div className="max-w-3xl mx-auto px-3 sm:px-4 py-5 sm:py-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -71,36 +71,44 @@ export default async function ArticlePage({ params }: Props) {
       />
 
       {/* パンくず */}
-      <nav className="text-xs text-gray-500 mb-6 flex items-center gap-2 flex-wrap">
-        <Link href="/" className="hover:text-orange-600">ホーム</Link>
+      <nav className="text-[11px] sm:text-xs text-gray-500 mb-4 sm:mb-6 flex items-center gap-1.5 flex-wrap">
+        <Link href="/" className="hover:text-orange-600">
+          ホーム
+        </Link>
         <span>›</span>
-        <Link href="/articles" className="hover:text-orange-600">記事一覧</Link>
+        <Link href="/articles" className="hover:text-orange-600">
+          記事一覧
+        </Link>
         <span>›</span>
-        <span className="text-gray-700 line-clamp-1">{article.title}</span>
+        <span className="text-gray-700 line-clamp-1 max-w-[200px] sm:max-w-none">
+          {article.title}
+        </span>
       </nav>
 
-      <article className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8">
+      <article className="bg-white rounded-xl sm:rounded-2xl shadow-sm border border-gray-100 p-4 sm:p-8">
         {/* 記事ヘッダー */}
-        <header className="mb-6 pb-6 border-b border-gray-100">
-          <div className="flex items-center gap-2 flex-wrap mb-3">
+        <header className="mb-5 pb-5 sm:mb-6 sm:pb-6 border-b border-gray-100">
+          <div className="flex items-center gap-2 flex-wrap mb-2 sm:mb-3">
             {category && (
               <span
-                className={`text-xs font-bold px-3 py-1 rounded-full ${category.color}`}
+                className={`text-[10px] sm:text-xs font-bold px-2.5 sm:px-3 py-1 rounded-full ${category.color}`}
               >
                 {category.label}
               </span>
             )}
-            <time className="text-xs text-gray-500">📅 {article.date} 更新</time>
+            <time className="text-[10px] sm:text-xs text-gray-500">
+              📅 {article.date} 更新
+            </time>
           </div>
-          <h1 className="text-xl sm:text-3xl font-bold text-gray-900 leading-tight tracking-tight">
+          <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold text-gray-900 leading-snug sm:leading-tight tracking-tight">
             {article.title}
           </h1>
           {article.tags.length > 0 && (
-            <div className="flex gap-2 flex-wrap mt-3">
-              {article.tags.map((tag) => (
+            <div className="flex gap-1.5 flex-wrap mt-2 sm:mt-3">
+              {article.tags.slice(0, 5).map((tag) => (
                 <span
                   key={tag}
-                  className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded text-[11px] font-medium border border-orange-100"
+                  className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded text-[10px] sm:text-[11px] font-medium border border-orange-100"
                 >
                   #{tag}
                 </span>
