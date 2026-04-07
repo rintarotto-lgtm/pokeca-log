@@ -4,40 +4,6 @@ interface Heading {
   id: string;
 }
 
-/**
- * Markdown本文から ## と ### を抽出して目次を生成
- */
-export function extractHeadings(md: string): Heading[] {
-  const headings: Heading[] = [];
-  const lines = md.split("\n");
-  const seen = new Map<string, number>();
-
-  for (const line of lines) {
-    let level: 2 | 3 | null = null;
-    let text = "";
-    if (line.startsWith("## ") && !line.startsWith("### ")) {
-      level = 2;
-      text = line.slice(3).trim();
-    } else if (line.startsWith("### ")) {
-      level = 3;
-      text = line.slice(4).trim();
-    }
-    if (level && text) {
-      // ID生成（日本語そのまま）
-      let id = text
-        .replace(/[#*`\[\]()]/g, "")
-        .replace(/\s+/g, "-")
-        .toLowerCase();
-      // 重複対応
-      const count = seen.get(id) ?? 0;
-      seen.set(id, count + 1);
-      if (count > 0) id = `${id}-${count}`;
-      headings.push({ level, text, id });
-    }
-  }
-  return headings;
-}
-
 export default function TableOfContents({ headings }: { headings: Heading[] }) {
   if (headings.length === 0) return null;
 
@@ -54,7 +20,11 @@ export default function TableOfContents({ headings }: { headings: Heading[] }) {
         {headings.map((h, i) => (
           <li
             key={h.id}
-            className={h.level === 3 ? "ml-5 text-gray-600" : "text-gray-800 font-medium"}
+            className={
+              h.level === 3
+                ? "ml-5 text-gray-600"
+                : "text-gray-800 font-medium"
+            }
           >
             <a
               href={`#${h.id}`}

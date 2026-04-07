@@ -54,7 +54,10 @@
       "Bash(curl -sLI https://pokeca-log.com/articles/mega-greninja-ex-sar-price)",
       "Bash(curl -sL https://pokeca-log.com/articles/mega-greninja-ex-sar-price)",
       "Bash(npx tsx:*)",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 大型UI改修 - オレンジ基調・TOC・ランキングカード・吹き出しボックス・トレンド調査ツール')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 大型UI改修 - オレンジ基調・TOC・ランキングカード・吹き出しボックス・トレンド調査ツール')",
+      "Bash(curl -sLI https://pokeca-log.com/articles/ninja-spinner-atari-matome)",
+      "Bash(curl -sL https://www.pokeca-log.com/articles/ninja-spinner-atari-matome)",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: TS正規表現の/sフラグを使わない書き方に変更（ES2017互換）')"
     ]
   }
 }
