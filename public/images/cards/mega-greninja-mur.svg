@@ -1,99 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 560" width="400" height="560">
-  <defs>
-    <linearGradient id="card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24" />
-      <stop offset="30%" stop-color="#f59e0b" />
-      <stop offset="60%" stop-color="#d97706" />
-      <stop offset="100%" stop-color="#92400e" />
-    </linearGradient>
-    <linearGradient id="inner-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef3c7" />
-      <stop offset="50%" stop-color="#fde68a" />
-      <stop offset="100%" stop-color="#fbbf24" />
-    </linearGradient>
-    <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5" />
-      <stop offset="50%" stop-color="#ffffff" stop-opacity="0.1" />
-      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.3" />
-    </linearGradient>
-    <linearGradient id="ninja-bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1e3a8a" />
-      <stop offset="100%" stop-color="#0c4a6e" />
-    </linearGradient>
-  </defs>
+  <rect width="400" height="560" rx="20" fill="#f1f5f9" stroke="#cbd5e1" stroke-width="2" stroke-dasharray="8 6" />
 
-  <!-- Card outer frame (gold) -->
-  <rect width="400" height="560" rx="20" fill="url(#card-bg)" />
-
-  <!-- Inner card area -->
-  <rect x="15" y="15" width="370" height="530" rx="14" fill="url(#inner-bg)" />
-
-  <!-- Holographic shine effect -->
-  <rect x="15" y="15" width="370" height="530" rx="14" fill="url(#shine)" />
-
-  <!-- Top header band -->
-  <rect x="25" y="25" width="350" height="55" rx="8" fill="#1e3a8a" />
-  <text x="40" y="55" fill="#fbbf24" font-size="22" font-weight="bold" font-family="'Noto Sans JP', sans-serif">
-    メガゲッコウガ
-  </text>
-  <text x="295" y="55" fill="#fbbf24" font-size="22" font-weight="bold" font-family="sans-serif" font-style="italic">
-    ex
-  </text>
-  <text x="335" y="48" fill="#fef3c7" font-size="11" font-family="sans-serif">
-    HP
-  </text>
-  <text x="358" y="56" fill="#fef3c7" font-size="14" font-weight="bold" font-family="sans-serif">
-    350
-  </text>
-
-  <!-- Ninja silhouette area -->
-  <rect x="35" y="100" width="330" height="280" rx="6" fill="url(#ninja-bg)" stroke="#fbbf24" stroke-width="2" />
-
-  <!-- Decorative shuriken -->
-  <g transform="translate(200, 240)" fill="#fbbf24" opacity="0.85">
-    <polygon points="0,-90 25,-25 90,0 25,25 0,90 -25,25 -90,0 -25,-25" />
-    <circle cx="0" cy="0" r="18" fill="#1e3a8a" stroke="#fbbf24" stroke-width="3" />
-    <circle cx="0" cy="0" r="6" fill="#fbbf24" />
+  <g transform="translate(200, 260)" text-anchor="middle" font-family="'Noto Sans JP', sans-serif">
+    <text y="-20" font-size="56" fill="#94a3b8">🎴</text>
+    <text y="30" font-size="18" fill="#475569" font-weight="bold">画像準備中</text>
+    <text y="58" font-size="13" fill="#64748b">メガゲッコウガex MUR</text>
+    <text y="80" font-size="11" fill="#94a3b8">120 / 083</text>
   </g>
 
-  <!-- Sparkles -->
-  <g fill="#fde68a" opacity="0.9">
-    <circle cx="80" cy="140" r="2" />
-    <circle cx="320" cy="160" r="2.5" />
-    <circle cx="100" cy="320" r="2" />
-    <circle cx="310" cy="340" r="2.5" />
-    <circle cx="60" cy="220" r="1.5" />
-    <circle cx="340" cy="250" r="1.5" />
+  <g transform="translate(200, 490)" text-anchor="middle" font-family="'Noto Sans JP', sans-serif">
+    <text y="0" font-size="10" fill="#94a3b8">実写画像に差し替え予定</text>
   </g>
-
-  <!-- Move name area -->
-  <rect x="35" y="395" width="330" height="50" rx="6" fill="#fef3c7" stroke="#92400e" stroke-width="1.5" />
-  <text x="50" y="425" fill="#1e3a8a" font-size="18" font-weight="bold" font-family="'Noto Sans JP', sans-serif">
-    🥷 ニンジャスピナー
-  </text>
-  <text x="335" y="425" text-anchor="end" fill="#92400e" font-size="20" font-weight="bold" font-family="sans-serif">
-    120+
-  </text>
-
-  <!-- Bottom info -->
-  <rect x="35" y="460" width="330" height="40" rx="4" fill="#fef3c7" />
-  <text x="200" y="485" text-anchor="middle" fill="#92400e" font-size="11" font-family="'Noto Sans JP', sans-serif">
-    特性「ひっさつしゅりけん」
-  </text>
-
-  <!-- Rarity badge MUR -->
-  <g transform="translate(200, 525)">
-    <rect x="-50" y="-15" width="100" height="22" rx="11" fill="#1e3a8a" stroke="#fbbf24" stroke-width="2" />
-    <text x="0" y="2" text-anchor="middle" fill="#fbbf24" font-size="14" font-weight="bold" font-family="sans-serif">
-      MUR ✨
-    </text>
-  </g>
-
-  <!-- Card number -->
-  <text x="35" y="545" fill="#92400e" font-size="9" font-family="sans-serif">
-    120/083
-  </text>
-  <text x="365" y="545" text-anchor="end" fill="#92400e" font-size="9" font-family="sans-serif">
-    ニンジャスピナー
-  </text>
 </svg>

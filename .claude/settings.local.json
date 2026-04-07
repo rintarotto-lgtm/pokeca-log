@@ -41,7 +41,11 @@
       "WebFetch(domain:www.pokemon-card.com)",
       "Bash(npm_config_cache=/tmp/npm-cache npm install --save-dev tsx)",
       "Bash(rm -f /Users/mac/Desktop/自動化/ポケカ/.git/index.lock)",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: チャートtooltip・TOP10ランキング・自動更新cron・BOX/カード画像追加')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: チャートtooltip・TOP10ランキング・自動更新cron・BOX/カード画像追加')",
+      "Bash(curl -sL https://pokeca-log.com/articles/ninja-spinner-atari-matome)",
+      "Bash(curl -sL \"https://pokeca-log.com/_next/static/chunks/356-75bb4f489179f10f.js\")",
+      "Bash(curl -sL \"https://pokeca-log.com/_next/static/chunks/app/articles/%5Bslug%5D/page-91c1a7fb7b390957.js\")",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: 画像SVGを正直なプレースホルダーに差し替え・著作権ガイド強化')"
     ]
   }
 }
