@@ -10,7 +10,9 @@ export interface Article {
   packSlug?: string;
   chartCardId?: string;
   eyecatch?: string;
+  eyecatchSource?: string; // 引用元URL
   cardImage?: string;
+  cardImageSource?: string; // カード画像の引用元URL
 }
 
 export interface ArticleWithContent extends Article {

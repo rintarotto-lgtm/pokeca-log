@@ -52,8 +52,30 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
-          &copy; {new Date().getFullYear()} {SITE_NAME}. All rights reserved.
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-xs text-gray-500 space-y-2">
+          <p>
+            &copy; {new Date().getFullYear()} {SITE_NAME}. All rights
+            reserved.
+          </p>
+          <p className="text-gray-500 leading-relaxed max-w-2xl mx-auto">
+            本サイトに掲載しているポケモンカードの画像は、
+            <a
+              href="https://www.pokemon-card.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-300"
+            >
+              ポケモンカードゲーム公式ホームページ
+            </a>
+            より引用しています。
+          </p>
+          <p className="text-gray-600">
+            &copy;Pokémon &copy;Nintendo/Creatures Inc./GAME FREAK inc.
+          </p>
+          <p className="text-gray-600">
+            ポケットモンスター・ポケモン・Pokémon は任天堂・クリーチャーズ・ゲームフリークの登録商標です。
+            当サイトは公式とは関係のない個人運営のメディアです。
+          </p>
         </div>
       </div>
     </footer>

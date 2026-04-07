@@ -45,7 +45,11 @@
       "Bash(curl -sL https://pokeca-log.com/articles/ninja-spinner-atari-matome)",
       "Bash(curl -sL \"https://pokeca-log.com/_next/static/chunks/356-75bb4f489179f10f.js\")",
       "Bash(curl -sL \"https://pokeca-log.com/_next/static/chunks/app/articles/%5Bslug%5D/page-91c1a7fb7b390957.js\")",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: 画像SVGを正直なプレースホルダーに差し替え・著作権ガイド強化')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: 画像SVGを正直なプレースホルダーに差し替え・著作権ガイド強化')",
+      "WebFetch(domain:torecamap.co.jp)",
+      "Bash(curl -sL https://www.pokemon-card.com/ex/m4/ -H \"User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\")",
+      "Bash(curl -sI \"https://www.pokemon-card.com/ex/m4/assets/images/ogp.png\")",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 公式画像を引用表示する仕組みを実装・出典と著作権表記を明示')"
     ]
   }
 }

@@ -27,7 +27,9 @@ export function getAllArticles(): Article[] {
         packSlug: data.packSlug,
         chartCardId: data.chartCardId,
         eyecatch: data.eyecatch,
+        eyecatchSource: data.eyecatchSource,
         cardImage: data.cardImage,
+        cardImageSource: data.cardImageSource,
       } satisfies Article;
     });
   return articles.sort(
@@ -54,7 +56,9 @@ export function getArticleBySlug(slug: string): ArticleWithContent | null {
         packSlug: data.packSlug,
         chartCardId: data.chartCardId,
         eyecatch: data.eyecatch,
+        eyecatchSource: data.eyecatchSource,
         cardImage: data.cardImage,
+        cardImageSource: data.cardImageSource,
         content,
       };
     }
