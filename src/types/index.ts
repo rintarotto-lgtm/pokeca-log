@@ -9,6 +9,8 @@ export interface Article {
   popular?: boolean;
   packSlug?: string;
   chartCardId?: string;
+  eyecatch?: string;
+  cardImage?: string;
 }
 
 export interface ArticleWithContent extends Article {

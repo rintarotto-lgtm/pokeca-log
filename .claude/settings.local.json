@@ -35,7 +35,13 @@
       "WebSearch",
       "Bash(rm -f .git/index.lock)",
       "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 5本の記事追加・aboutページ追加・トップページ改修・Markdown改善')",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: MUR事実誤認を修正・実価格データに更新・価格推移チャート追加')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: MUR事実誤認を修正・実価格データに更新・価格推移チャート追加')",
+      "Bash(curl -sI https://pokeca-log.com/articles/mega-greninja-ex-mur-price)",
+      "Bash(curl -sL https://pokeca-log.com/articles/mega-greninja-ex-mur-price)",
+      "WebFetch(domain:www.pokemon-card.com)",
+      "Bash(npm_config_cache=/tmp/npm-cache npm install --save-dev tsx)",
+      "Bash(rm -f /Users/mac/Desktop/自動化/ポケカ/.git/index.lock)",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: チャートtooltip・TOP10ランキング・自動更新cron・BOX/カード画像追加')"
     ]
   }
 }

@@ -1,3 +1,6 @@
+"use client";
+
+import { useState, useRef } from "react";
 import type { CardPriceHistoryData } from "@/lib/cardHistory";
 
 const SALE_COLOR = "#06b6d4"; // cyan-500
@@ -12,6 +15,11 @@ function formatDate(dateStr: string) {
   return `${d.getMonth() + 1}/${d.getDate()}`;
 }
 
+function formatFullDate(dateStr: string) {
+  const d = new Date(dateStr);
+  return `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate()}`;
+}
+
 export default function CardPriceHistoryChart({
   data,
 }: {
@@ -20,24 +28,24 @@ export default function CardPriceHistoryChart({
   const { history, cardName, currentSale, currentBuy, initialSale, maxSale } =
     data;
 
+  const svgRef = useRef<SVGSVGElement>(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   if (history.length < 2) return null;
 
   // Y軸の範囲計算
   const allValues = history.flatMap((h) => [h.sale, h.buy]);
   const minPrice = Math.min(...allValues);
   const maxPrice = Math.max(...allValues);
-
-  // 余白を持たせる
   const yMin = Math.floor((minPrice * 0.95) / 5000) * 5000;
   const yMax = Math.ceil((maxPrice * 1.05) / 5000) * 5000;
   const range = yMax - yMin || 1;
 
   // チャートのサイズ
-  const chartWidth = 100; // %
+  const chartWidth = 100;
   const chartHeight = 280;
   const paddingTop = 20;
   const paddingBottom = 30;
-  const paddingLeft = 0;
   const innerHeight = chartHeight - paddingTop - paddingBottom;
 
   const getPoint = (index: number, price: number) => {
@@ -63,6 +71,39 @@ export default function CardPriceHistoryChart({
     const value = yMax - (range / ySteps) * i;
     return Math.round(value / 1000) * 1000;
   });
+
+  // マウス位置から最も近いデータポイントのindex を取得
+  const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
+    if (!svgRef.current) return;
+    const rect = svgRef.current.getBoundingClientRect();
+    const relativeX = e.clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, relativeX / rect.width));
+    const idx = Math.round(ratio * (history.length - 1));
+    setHoveredIndex(idx);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent<SVGSVGElement>) => {
+    if (!svgRef.current || !e.touches[0]) return;
+    const rect = svgRef.current.getBoundingClientRect();
+    const relativeX = e.touches[0].clientX - rect.left;
+    const ratio = Math.max(0, Math.min(1, relativeX / rect.width));
+    const idx = Math.round(ratio * (history.length - 1));
+    setHoveredIndex(idx);
+  };
+
+  const hovered = hoveredIndex !== null ? history[hoveredIndex] : null;
+  const hoveredSalePoint =
+    hoveredIndex !== null
+      ? getPoint(hoveredIndex, history[hoveredIndex].sale)
+      : null;
+  const hoveredBuyPoint =
+    hoveredIndex !== null
+      ? getPoint(hoveredIndex, history[hoveredIndex].buy)
+      : null;
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-6 my-8">
@@ -119,10 +160,15 @@ export default function CardPriceHistoryChart({
           {/* SVGチャート */}
           <div className="flex-1 relative">
             <svg
+              ref={svgRef}
               viewBox={`-1 0 ${chartWidth + 2} ${chartHeight}`}
               preserveAspectRatio="none"
-              className="w-full"
+              className="w-full cursor-crosshair"
               style={{ height: chartHeight }}
+              onMouseMove={handleMouseMove}
+              onMouseLeave={handleMouseLeave}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleMouseLeave}
             >
               {/* グリッド線 */}
               {yLabels.map((_, i) => (
@@ -137,6 +183,20 @@ export default function CardPriceHistoryChart({
                   vectorEffect="non-scaling-stroke"
                 />
               ))}
+
+              {/* ホバー時の縦ガイドライン */}
+              {hoveredIndex !== null && hoveredSalePoint && (
+                <line
+                  x1={hoveredSalePoint.x}
+                  y1={paddingTop}
+                  x2={hoveredSalePoint.x}
+                  y2={paddingTop + innerHeight}
+                  stroke="#9ca3af"
+                  strokeWidth="0.5"
+                  strokeDasharray="2 2"
+                  vectorEffect="non-scaling-stroke"
+                />
+              )}
 
               {/* 販売価格の線 */}
               <path
@@ -164,30 +224,69 @@ export default function CardPriceHistoryChart({
               {history.map((h, i) => {
                 const sp = getPoint(i, h.sale);
                 const bp = getPoint(i, h.buy);
+                const isHovered = hoveredIndex === i;
                 return (
                   <g key={i}>
                     <circle
                       cx={sp.x}
                       cy={sp.y}
-                      r="3"
+                      r={isHovered ? 5 : 3}
                       fill="white"
                       stroke={SALE_COLOR}
-                      strokeWidth="1.5"
+                      strokeWidth={isHovered ? 2.5 : 1.5}
                       vectorEffect="non-scaling-stroke"
                     />
                     <circle
                       cx={bp.x}
                       cy={bp.y}
-                      r="3"
+                      r={isHovered ? 5 : 3}
                       fill="white"
                       stroke={BUY_COLOR}
-                      strokeWidth="1.5"
+                      strokeWidth={isHovered ? 2.5 : 1.5}
                       vectorEffect="non-scaling-stroke"
                     />
                   </g>
                 );
               })}
             </svg>
+
+            {/* Tooltip (HTMLオーバーレイ) */}
+            {hovered && hoveredSalePoint && (
+              <div
+                className="absolute pointer-events-none z-10"
+                style={{
+                  left: `${hoveredSalePoint.x}%`,
+                  top: `${Math.min(hoveredSalePoint.y, hoveredBuyPoint?.y ?? 0) - 10}px`,
+                  transform: `translate(${hoveredIndex === 0 ? "0" : hoveredIndex === history.length - 1 ? "-100%" : "-50%"}, -100%)`,
+                }}
+              >
+                <div className="bg-gray-900/95 text-white rounded-lg shadow-lg px-3 py-2 text-xs whitespace-nowrap">
+                  <div className="font-bold mb-1 text-gray-300">
+                    {formatFullDate(hovered.date)}
+                  </div>
+                  <div className="flex items-center gap-2 mb-0.5">
+                    <span
+                      className="inline-block w-2 h-2 rounded-full"
+                      style={{ backgroundColor: SALE_COLOR }}
+                    />
+                    <span>販売：</span>
+                    <span className="font-bold">
+                      {formatYen(hovered.sale)}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="inline-block w-2 h-2 rounded-full"
+                      style={{ backgroundColor: BUY_COLOR }}
+                    />
+                    <span>買取：</span>
+                    <span className="font-bold">
+                      {formatYen(hovered.buy)}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            )}
 
             {/* X軸ラベル */}
             <div className="flex justify-between mt-1 px-1">
@@ -242,7 +341,10 @@ export default function CardPriceHistoryChart({
       </div>
 
       <p className="text-xs text-gray-400 mt-4 text-right">
-        ※ 価格は各種カードショップの公開情報を元にしています
+        ※ チャート上をマウスオーバー（スマホは長押し）で詳細を表示
+      </p>
+      <p className="text-xs text-gray-400 mt-1 text-right">
+        最終更新：{data.lastUpdated}
       </p>
     </div>
   );

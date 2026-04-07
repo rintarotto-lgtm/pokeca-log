@@ -26,6 +26,8 @@ export function getAllArticles(): Article[] {
         popular: data.popular ?? false,
         packSlug: data.packSlug,
         chartCardId: data.chartCardId,
+        eyecatch: data.eyecatch,
+        cardImage: data.cardImage,
       } satisfies Article;
     });
   return articles.sort(
@@ -51,6 +53,8 @@ export function getArticleBySlug(slug: string): ArticleWithContent | null {
         popular: data.popular ?? false,
         packSlug: data.packSlug,
         chartCardId: data.chartCardId,
+        eyecatch: data.eyecatch,
+        cardImage: data.cardImage,
         content,
       };
     }

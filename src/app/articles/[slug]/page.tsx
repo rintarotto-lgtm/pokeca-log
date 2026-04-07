@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
 import { renderMarkdown } from "@/lib/markdown";
@@ -99,9 +100,38 @@ export default async function ArticlePage({ params }: Props) {
           </div>
         </div>
 
-        <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-8 flex items-center justify-center text-6xl opacity-50">
-          🎴
-        </div>
+        {/* アイキャッチ画像 */}
+        {article.eyecatch ? (
+          <div className="aspect-[1200/630] relative rounded-lg overflow-hidden mb-8 bg-gray-100">
+            <Image
+              src={article.eyecatch}
+              alt={article.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 768px"
+              priority
+            />
+          </div>
+        ) : (
+          <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-8 flex items-center justify-center text-6xl opacity-50">
+            🎴
+          </div>
+        )}
+
+        {/* カード画像（チャートの上に表示） */}
+        {article.cardImage && (
+          <div className="flex justify-center mb-6">
+            <div className="relative w-64 sm:w-72">
+              <Image
+                src={article.cardImage}
+                alt={article.title}
+                width={400}
+                height={560}
+                className="rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        )}
 
         {chartData && <CardPriceHistoryChart data={chartData} />}
 

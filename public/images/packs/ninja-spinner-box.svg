@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="box-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+    <linearGradient id="shine-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#ffffff" stop-opacity="0" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur" />
+      <feMerge>
+        <feMergeNode in="coloredBlur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)" />
+
+  <!-- Decorative stars -->
+  <g fill="#ffffff" opacity="0.6">
+    <circle cx="100" cy="80" r="1.5" />
+    <circle cx="250" cy="140" r="1" />
+    <circle cx="400" cy="60" r="1.5" />
+    <circle cx="550" cy="120" r="1" />
+    <circle cx="700" cy="90" r="1.2" />
+    <circle cx="850" cy="50" r="1.5" />
+    <circle cx="1000" cy="100" r="1" />
+    <circle cx="1100" cy="70" r="1.2" />
+    <circle cx="80" cy="540" r="1" />
+    <circle cx="200" cy="580" r="1.5" />
+    <circle cx="380" cy="520" r="1" />
+    <circle cx="900" cy="560" r="1.2" />
+    <circle cx="1050" cy="530" r="1" />
+    <circle cx="1150" cy="580" r="1.5" />
+  </g>
+
+  <!-- BOX shape (front face) -->
+  <g transform="translate(350, 130)">
+    <!-- Shadow -->
+    <rect x="10" y="15" width="500" height="380" rx="12" fill="#000" opacity="0.5" filter="url(#glow)" />
+
+    <!-- Box body -->
+    <rect x="0" y="0" width="500" height="380" rx="12" fill="url(#box-gradient)" stroke="url(#accent-gradient)" stroke-width="3" />
+
+    <!-- Top accent band -->
+    <rect x="0" y="0" width="500" height="60" rx="12" fill="url(#accent-gradient)" opacity="0.9" />
+    <rect x="0" y="48" width="500" height="12" fill="url(#accent-gradient)" />
+
+    <!-- Shine effect -->
+    <rect x="0" y="0" width="500" height="380" rx="12" fill="url(#shine-gradient)" />
+
+    <!-- Pack title -->
+    <text x="250" y="40" text-anchor="middle" fill="#ffffff" font-size="26" font-weight="bold" font-family="'Noto Sans JP', sans-serif" letter-spacing="3">
+      MEGA EXPANSION
+    </text>
+
+    <!-- Central emblem circle -->
+    <circle cx="250" cy="190" r="90" fill="none" stroke="url(#accent-gradient)" stroke-width="4" opacity="0.8" />
+    <circle cx="250" cy="190" r="70" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.5" />
+
+    <!-- Shuriken icon (忍者スピナー) -->
+    <g transform="translate(250, 190)" fill="#06b6d4" opacity="0.9">
+      <polygon points="0,-55 15,-15 55,0 15,15 0,55 -15,15 -55,0 -15,-15" />
+      <circle cx="0" cy="0" r="10" fill="#1e1b4b" stroke="#06b6d4" stroke-width="2" />
+    </g>
+
+    <!-- Main title -->
+    <text x="250" y="325" text-anchor="middle" fill="#ffffff" font-size="48" font-weight="bold" font-family="'Noto Sans JP', sans-serif">
+      ニンジャスピナー
+    </text>
+
+    <!-- Subtitle -->
+    <text x="250" y="355" text-anchor="middle" fill="#06b6d4" font-size="14" font-weight="bold" font-family="'Noto Sans JP', sans-serif" letter-spacing="2">
+      NINJA SPINNER
+    </text>
+  </g>
+
+  <!-- Site branding (left) -->
+  <g transform="translate(60, 500)">
+    <text fill="#06b6d4" font-size="22" font-weight="bold" font-family="'Noto Sans JP', sans-serif">
+      📒 ポケカろぐ
+    </text>
+    <text y="28" fill="#94a3b8" font-size="14" font-family="'Noto Sans JP', sans-serif">
+      pokeca-log.com
+    </text>
+  </g>
+
+  <!-- Release date (right) -->
+  <g transform="translate(1020, 500)" text-anchor="end">
+    <text x="120" fill="#94a3b8" font-size="12" font-family="'Noto Sans JP', sans-serif">
+      発売日
+    </text>
+    <text x="120" y="24" fill="#ffffff" font-size="20" font-weight="bold" font-family="'Noto Sans JP', sans-serif">
+      2026.03.13
+    </text>
+  </g>
+</svg>
