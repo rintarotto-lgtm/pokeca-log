@@ -49,7 +49,8 @@
       "WebFetch(domain:torecamap.co.jp)",
       "Bash(curl -sL https://www.pokemon-card.com/ex/m4/ -H \"User-Agent: Mozilla/5.0 \\(Macintosh; Intel Mac OS X 10_15_7\\) AppleWebKit/537.36\")",
       "Bash(curl -sI \"https://www.pokemon-card.com/ex/m4/assets/images/ogp.png\")",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 公式画像を引用表示する仕組みを実装・出典と著作権表記を明示')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 公式画像を引用表示する仕組みを実装・出典と著作権表記を明示')",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: メガゲッコウガex SAR個別記事・価格履歴追加・相互リンク設定')"
     ]
   }
 }
