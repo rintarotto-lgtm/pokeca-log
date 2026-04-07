@@ -8,22 +8,24 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
+    <header className="bg-white shadow-sm sticky top-0 z-50 border-b-4 border-orange-500">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-2xl">📒</span>
-            <span className="text-xl font-bold text-gray-900">
+          <Link href="/" className="flex items-center gap-2 group">
+            <span className="inline-flex items-center justify-center w-9 h-9 bg-orange-500 text-white rounded-lg font-bold text-lg shadow group-hover:scale-110 transition-transform">
+              📒
+            </span>
+            <span className="text-xl font-bold text-gray-900 tracking-tight">
               {SITE_NAME}
             </span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-gray-700 hover:text-blue-600 font-medium transition-colors"
+                className="px-4 py-2 text-gray-700 hover:text-orange-600 hover:bg-orange-50 font-medium transition-colors rounded-md text-sm"
               >
                 {link.label}
               </Link>
@@ -66,7 +68,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="block py-3 text-gray-700 hover:text-blue-600 font-medium"
+                className="block py-3 text-gray-700 hover:text-orange-600 font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.label}

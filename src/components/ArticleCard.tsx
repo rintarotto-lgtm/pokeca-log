@@ -9,40 +9,41 @@ export default function ArticleCard({ article }: { article: Article }) {
     article.thumbnail &&
     article.thumbnail !== "/images/default-thumb.svg" &&
     article.thumbnail !== "/images/default-thumb.jpg";
+  const displayImage = article.eyecatch || (hasThumbnail ? article.thumbnail : null);
 
   return (
     <Link
       href={`/articles/${article.slug}`}
-      className="bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow overflow-hidden group"
+      className="bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 hover:border-orange-200 transition-all overflow-hidden group flex flex-col"
     >
-      <div className="h-36 bg-gradient-to-br from-blue-100 to-purple-100 relative overflow-hidden">
-        {hasThumbnail ? (
+      <div className="aspect-[1200/630] bg-gradient-to-br from-orange-100 to-amber-100 relative overflow-hidden">
+        {displayImage ? (
           <Image
-            src={article.thumbnail}
+            src={displayImage}
             alt={article.title}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
-          <div className="absolute inset-0 flex items-center justify-center text-3xl opacity-30">
+          <div className="absolute inset-0 flex items-center justify-center text-4xl opacity-40">
             🎴
           </div>
         )}
         {category && (
           <span
-            className={`absolute top-2 left-2 text-xs font-bold px-2 py-1 rounded ${category.color} z-10`}
+            className={`absolute top-3 left-3 text-[10px] font-bold px-2.5 py-1 rounded-full ${category.color} z-10 shadow-sm`}
           >
             {category.label}
           </span>
         )}
       </div>
-      <div className="p-4">
-        <h3 className="font-bold text-gray-900 group-hover:text-blue-600 transition-colors line-clamp-2 text-sm leading-relaxed">
+      <div className="p-4 flex-1 flex flex-col">
+        <h3 className="font-bold text-gray-900 group-hover:text-orange-600 transition-colors line-clamp-2 text-sm sm:text-base leading-relaxed flex-1">
           {article.title}
         </h3>
-        <time className="text-xs text-gray-500 mt-2 block">
-          {article.date}
+        <time className="text-xs text-gray-500 mt-3 block">
+          📅 {article.date}
         </time>
       </div>
     </Link>

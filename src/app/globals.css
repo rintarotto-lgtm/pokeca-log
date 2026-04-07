@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f9fafb;
-  --foreground: #111827;
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --accent: #f97316;
+  --accent-light: #fff7ed;
 }
 
 body {
@@ -17,6 +19,7 @@ body {
     system-ui,
     -apple-system,
     sans-serif;
+  -webkit-font-smoothing: antialiased;
 }
 
 .line-clamp-2 {
@@ -24,4 +27,16 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Smooth anchor scroll for table of contents */
+html {
+  scroll-behavior: smooth;
 }

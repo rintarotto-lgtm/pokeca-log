@@ -30,6 +30,9 @@ export function getAllArticles(): Article[] {
         eyecatchSource: data.eyecatchSource,
         cardImage: data.cardImage,
         cardImageSource: data.cardImageSource,
+        rankingId: data.rankingId,
+        recommended: data.recommended,
+        toc: data.toc ?? true,
       } satisfies Article;
     });
   return articles.sort(
@@ -59,6 +62,9 @@ export function getArticleBySlug(slug: string): ArticleWithContent | null {
         eyecatchSource: data.eyecatchSource,
         cardImage: data.cardImage,
         cardImageSource: data.cardImageSource,
+        rankingId: data.rankingId,
+        recommended: data.recommended,
+        toc: data.toc ?? true,
         content,
       };
     }

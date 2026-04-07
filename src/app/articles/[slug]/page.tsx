@@ -2,10 +2,13 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import { getAllArticles, getArticleBySlug } from "@/lib/articles";
 import { CATEGORIES, SITE_NAME, SITE_URL } from "@/lib/constants";
-import { renderMarkdown } from "@/lib/markdown";
+import { renderMarkdown, extractHeadings } from "@/lib/markdown";
 import { getCardHistory } from "@/lib/cardHistory";
+import { getRanking } from "@/lib/rankings";
 import CardPriceHistoryChart from "@/components/CardPriceHistoryChart";
 import QuotedImage from "@/components/QuotedImage";
+import TableOfContents from "@/components/TableOfContents";
+import RankingList from "@/components/RankingList";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -28,6 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: article.date,
       url: `${SITE_URL}/articles/${slug}`,
+      images: article.eyecatch ? [{ url: article.eyecatch }] : undefined,
     },
   };
 }
@@ -38,12 +42,14 @@ export default async function ArticlePage({ params }: Props) {
   if (!article) notFound();
 
   const category = CATEGORIES.find((c) => c.id === article.category);
-
   const htmlContent = renderMarkdown(article.content);
+  const headings = article.toc !== false ? extractHeadings(article.content) : [];
 
   const chartData = article.chartCardId
     ? getCardHistory(article.chartCardId)
     : null;
+
+  const ranking = article.rankingId ? getRanking(article.rankingId) : null;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8">
@@ -64,42 +70,44 @@ export default async function ArticlePage({ params }: Props) {
         }}
       />
 
-      <nav className="text-sm text-gray-500 mb-6">
-        <Link href="/" className="hover:text-blue-600">
-          ホーム
-        </Link>
-        <span className="mx-2">/</span>
-        <span>{article.title}</span>
+      {/* パンくず */}
+      <nav className="text-xs text-gray-500 mb-6 flex items-center gap-2 flex-wrap">
+        <Link href="/" className="hover:text-orange-600">ホーム</Link>
+        <span>›</span>
+        <Link href="/articles" className="hover:text-orange-600">記事一覧</Link>
+        <span>›</span>
+        <span className="text-gray-700 line-clamp-1">{article.title}</span>
       </nav>
 
-      <article>
-        <div className="mb-6">
-          {category && (
-            <span
-              className={`text-xs font-bold px-2 py-1 rounded ${category.color}`}
-            >
-              {category.label}
-            </span>
-          )}
-          <h1 className="text-2xl font-bold text-gray-900 mt-3 leading-relaxed">
+      <article className="bg-white rounded-2xl shadow-sm border border-gray-100 p-5 sm:p-8">
+        {/* 記事ヘッダー */}
+        <header className="mb-6 pb-6 border-b border-gray-100">
+          <div className="flex items-center gap-2 flex-wrap mb-3">
+            {category && (
+              <span
+                className={`text-xs font-bold px-3 py-1 rounded-full ${category.color}`}
+              >
+                {category.label}
+              </span>
+            )}
+            <time className="text-xs text-gray-500">📅 {article.date} 更新</time>
+          </div>
+          <h1 className="text-xl sm:text-3xl font-bold text-gray-900 leading-tight tracking-tight">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 mt-3 text-sm text-gray-500">
-            <time>{article.date}</time>
-            {article.tags.length > 0 && (
-              <div className="flex gap-2 flex-wrap">
-                {article.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="bg-gray-100 text-gray-600 px-2 py-0.5 rounded text-xs"
-                  >
-                    #{tag}
-                  </span>
-                ))}
-              </div>
-            )}
-          </div>
-        </div>
+          {article.tags.length > 0 && (
+            <div className="flex gap-2 flex-wrap mt-3">
+              {article.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="bg-orange-50 text-orange-700 px-2 py-0.5 rounded text-[11px] font-medium border border-orange-100"
+                >
+                  #{tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </header>
 
         {/* アイキャッチ画像 */}
         {article.eyecatch ? (
@@ -122,9 +130,42 @@ export default async function ArticlePage({ params }: Props) {
               />
             </div>
           )
-        ) : (
-          <div className="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-lg mb-8 flex items-center justify-center text-6xl opacity-50">
-            🎴
+        ) : null}
+
+        {/* 概要 */}
+        {article.description && (
+          <p className="text-sm sm:text-base text-gray-700 leading-relaxed bg-gray-50 rounded-lg p-4 my-6 border-l-4 border-orange-400">
+            {article.description}
+          </p>
+        )}
+
+        {/* こんな方におすすめ */}
+        {article.recommended && article.recommended.length > 0 && (
+          <div className="my-8 rounded-2xl border-2 border-orange-300 overflow-hidden shadow-sm">
+            <div className="bg-orange-500 text-white px-5 py-3 font-bold flex items-center gap-2">
+              <span>✅</span>
+              <span>こんな方におすすめ</span>
+            </div>
+            <ul className="bg-orange-50 px-6 py-4 space-y-2 list-disc marker:text-orange-400">
+              {article.recommended.map((item, i) => (
+                <li key={i} className="text-gray-800 text-sm sm:text-base">
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* 目次 */}
+        {headings.length > 0 && <TableOfContents headings={headings} />}
+
+        {/* ランキング（rankingIdが指定されていればトップに表示） */}
+        {ranking && (
+          <div>
+            <h2 className="text-xl sm:text-2xl font-bold mt-12 mb-5 text-gray-900 pb-2 border-b-4 border-orange-400">
+              当たりカードランキング TOP{ranking.cards.length}（販売価格順）
+            </h2>
+            <RankingList data={ranking} sortMode="salePrice" />
           </div>
         )}
 
@@ -151,20 +192,29 @@ export default async function ArticlePage({ params }: Props) {
             </div>
           ))}
 
+        {/* 価格チャート */}
         {chartData && <CardPriceHistoryChart data={chartData} />}
 
+        {/* 本文 */}
         <div
-          className="prose max-w-none"
+          className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
       </article>
 
-      <div className="mt-12 pt-6 border-t">
+      {/* フッターナビ */}
+      <div className="mt-8 flex items-center justify-between gap-3 flex-wrap">
+        <Link
+          href="/articles"
+          className="inline-flex items-center gap-1 px-4 py-2 bg-white border-2 border-orange-300 text-orange-600 rounded-lg hover:bg-orange-50 transition-colors text-sm font-bold"
+        >
+          ← 記事一覧
+        </Link>
         <Link
           href="/"
-          className="text-blue-600 hover:underline text-sm"
+          className="inline-flex items-center gap-1 px-4 py-2 bg-orange-500 text-white rounded-lg hover:bg-orange-600 transition-colors text-sm font-bold"
         >
-          ← トップに戻る
+          ホームへ →
         </Link>
       </div>
     </div>
