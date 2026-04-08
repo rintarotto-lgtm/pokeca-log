@@ -1,0 +1,21 @@
+{
+  "cardId": "mega-pumpkaboo-sar",
+  "cardName": "メガパンプジンex SAR",
+  "cardNumber": "118/083",
+  "rarity": "SAR",
+  "pack": "ニンジャスピナー",
+  "history": [
+    { "date": "2026-03-13", "sale": 2400, "buy": 1700, "mercari": 2100 },
+    { "date": "2026-03-20", "sale": 2000, "buy": 1400, "mercari": 1800 },
+    { "date": "2026-03-27", "sale": 1700, "buy": 1150, "mercari": 1500 },
+    { "date": "2026-04-02", "sale": 1550, "buy": 1050, "mercari": 1350 },
+    { "date": "2026-04-06", "sale": 1500, "buy": 1000, "mercari": 1300 }
+  ],
+  "currentSale": 1500,
+  "currentBuy": 1000,
+  "currentMercari": 1300,
+  "initialSale": 2400,
+  "maxSale": 2400,
+  "source": "各種カードショップ・メルカリの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

@@ -1,0 +1,21 @@
+{
+  "cardId": "mega-lucario-sar",
+  "cardName": "メガルカリオex SAR",
+  "cardNumber": "088/063",
+  "rarity": "SAR",
+  "pack": "メガシンフォニア",
+  "history": [
+    { "date": "2026-03-01", "sale": 12000, "buy": 9000, "mercari": 10500 },
+    { "date": "2026-03-15", "sale": 11000, "buy": 8000, "mercari": 9500 },
+    { "date": "2026-03-25", "sale": 10800, "buy": 7000, "mercari": 9200 },
+    { "date": "2026-04-01", "sale": 10500, "buy": 6500, "mercari": 9000 },
+    { "date": "2026-04-06", "sale": 10400, "buy": 6000, "mercari": 8900 }
+  ],
+  "currentSale": 10400,
+  "currentBuy": 6000,
+  "currentMercari": 8900,
+  "initialSale": 19800,
+  "maxSale": 19800,
+  "source": "各種カードショップ・メルカリの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

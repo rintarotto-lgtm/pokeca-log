@@ -8,8 +8,8 @@ import { CATEGORIES } from "@/lib/constants";
 export default function Home() {
   const articles = getAllArticles();
   const popularArticles = getPopularArticles();
-  const gainers = getGainers(5);
-  const losers = getLosers(5);
+  const gainers = getGainers(10);
+  const losers = getLosers(10);
 
   if (articles.length === 0) {
     return (

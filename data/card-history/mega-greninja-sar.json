@@ -14,11 +14,11 @@
     { "date": "2026-03-28", "sale": 43800, "buy": 36000, "mercari": 40500 },
     { "date": "2026-03-31", "sale": 44500, "buy": 36500, "mercari": 41000 },
     { "date": "2026-04-03", "sale": 44800, "buy": 37000, "mercari": 41500 },
-    { "date": "2026-04-06", "sale": 44800, "buy": 37000, "mercari": 41500 }
+    { "date": "2026-04-06", "sale": 47500, "buy": 39000, "mercari": 43500 }
   ],
-  "currentSale": 44800,
-  "currentBuy": 37000,
-  "currentMercari": 41500,
+  "currentSale": 47500,
+  "currentBuy": 39000,
+  "currentMercari": 43500,
   "initialSale": 39800,
   "maxSale": 44800,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",

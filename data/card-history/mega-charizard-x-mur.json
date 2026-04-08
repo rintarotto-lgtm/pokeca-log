@@ -1,0 +1,21 @@
+{
+  "cardId": "mega-charizard-x-mur",
+  "cardName": "メガリザードンXex MUR",
+  "cardNumber": "116/080",
+  "rarity": "MUR",
+  "pack": "インフェルノX",
+  "history": [
+    { "date": "2026-03-01", "sale": 115000, "buy": 100000, "mercari": 108000 },
+    { "date": "2026-03-15", "sale": 120000, "buy": 105000, "mercari": 112000 },
+    { "date": "2026-03-25", "sale": 125000, "buy": 130000, "mercari": 120000 },
+    { "date": "2026-04-01", "sale": 128000, "buy": 150000, "mercari": 130000 },
+    { "date": "2026-04-06", "sale": 132000, "buy": 150000, "mercari": 135000 }
+  ],
+  "currentSale": 132000,
+  "currentBuy": 150000,
+  "currentMercari": 135000,
+  "initialSale": 108000,
+  "maxSale": 132000,
+  "source": "各種カードショップ・メルカリの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

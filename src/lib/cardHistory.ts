@@ -86,6 +86,13 @@ const IMAGE_MAP: Record<string, string> = {
   "roxie-performance-sar": "/images/cards/roxie-performance-sar.png",
 };
 
+function fmtForId(cardId: string): { slug: string | null; image: string | null } {
+  return {
+    slug: SLUG_MAP[cardId] ?? null,
+    image: IMAGE_MAP[cardId] ?? null,
+  };
+}
+
 /**
  * 各カードの直近の販売価格の変動を計算
  */
