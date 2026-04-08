@@ -9,6 +9,7 @@ import CardPriceHistoryChart from "@/components/CardPriceHistoryChart";
 import QuotedImage from "@/components/QuotedImage";
 import TableOfContents from "@/components/TableOfContents";
 import RankingList from "@/components/RankingList";
+import GiscusComments from "@/components/GiscusComments";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -208,6 +209,9 @@ export default async function ArticlePage({ params }: Props) {
           className="prose prose-lg max-w-none"
           dangerouslySetInnerHTML={{ __html: htmlContent }}
         />
+
+        {/* コメント欄 */}
+        <GiscusComments slug={slug} />
       </article>
 
       {/* フッターナビ */}

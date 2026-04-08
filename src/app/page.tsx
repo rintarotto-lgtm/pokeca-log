@@ -1,11 +1,15 @@
 import { getAllArticles, getPopularArticles } from "@/lib/articles";
+import { getGainers, getLosers } from "@/lib/cardHistory";
 import ArticleCard from "@/components/ArticleCard";
+import DailyMovers from "@/components/DailyMovers";
 import Link from "next/link";
 import { CATEGORIES } from "@/lib/constants";
 
 export default function Home() {
   const articles = getAllArticles();
   const popularArticles = getPopularArticles();
+  const gainers = getGainers(5);
+  const losers = getLosers(5);
 
   if (articles.length === 0) {
     return (
@@ -59,6 +63,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* 価格変動ランキング */}
+      <DailyMovers gainers={gainers} losers={losers} />
 
       {/* 最新記事 */}
       <section className="mb-12">
