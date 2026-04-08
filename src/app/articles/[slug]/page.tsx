@@ -9,7 +9,7 @@ import CardPriceHistoryChart from "@/components/CardPriceHistoryChart";
 import QuotedImage from "@/components/QuotedImage";
 import TableOfContents from "@/components/TableOfContents";
 import RankingList from "@/components/RankingList";
-import GiscusComments from "@/components/GiscusComments";
+import CustomComments from "@/components/CustomComments";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -211,7 +211,7 @@ export default async function ArticlePage({ params }: Props) {
         />
 
         {/* コメント欄 */}
-        <GiscusComments slug={slug} />
+        <CustomComments slug={slug} />
       </article>
 
       {/* フッターナビ */}
