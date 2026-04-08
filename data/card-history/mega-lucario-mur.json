@@ -1,0 +1,76 @@
+{
+  "cardId": "mega-lucario-mur",
+  "cardName": "メガルカリオex MUR",
+  "cardNumber": "118/080",
+  "rarity": "MUR",
+  "pack": "メガブレイブ",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 69900,
+      "buy": 51700,
+      "mercari": 59800
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 73900,
+      "buy": 57800,
+      "mercari": 66100
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 75000,
+      "buy": 60900,
+      "mercari": 64400
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 76700,
+      "buy": 56900,
+      "mercari": 67100
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 76700,
+      "buy": 58300,
+      "mercari": 65400
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 81000,
+      "buy": 64100,
+      "mercari": 72900
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 80200,
+      "buy": 58700,
+      "mercari": 69700
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 80000,
+      "buy": 60600,
+      "mercari": 68400
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 82200,
+      "buy": 61400,
+      "mercari": 70800
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 85500,
+      "buy": 69600,
+      "mercari": 76000
+    }
+  ],
+  "currentSale": 85500,
+  "currentBuy": 69600,
+  "currentMercari": 76000,
+  "initialSale": 69900,
+  "maxSale": 85500,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

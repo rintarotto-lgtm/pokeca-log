@@ -1,0 +1,76 @@
+{
+  "cardId": "miraidon-ex-sar",
+  "cardName": "ミライドンex SAR",
+  "cardNumber": "113/066",
+  "rarity": "SAR",
+  "pack": "古代の咆哮",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 16300,
+      "buy": 11800,
+      "mercari": 14100
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 16200,
+      "buy": 13100,
+      "mercari": 13900
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 16900,
+      "buy": 13800,
+      "mercari": 15400
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 17300,
+      "buy": 12600,
+      "mercari": 15100
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 17600,
+      "buy": 13200,
+      "mercari": 15900
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 17400,
+      "buy": 14100,
+      "mercari": 15300
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 17900,
+      "buy": 14400,
+      "mercari": 15700
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 19100,
+      "buy": 14800,
+      "mercari": 16300
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 18600,
+      "buy": 13800,
+      "mercari": 16400
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 20100,
+      "buy": 14700,
+      "mercari": 17700
+    }
+  ],
+  "currentSale": 20100,
+  "currentBuy": 14700,
+  "currentMercari": 17700,
+  "initialSale": 16300,
+  "maxSale": 20100,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

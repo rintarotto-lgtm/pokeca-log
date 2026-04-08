@@ -1,0 +1,76 @@
+{
+  "cardId": "bellibolt-ex-sar",
+  "cardName": "ハラバリーex SAR",
+  "cardNumber": "115/091",
+  "rarity": "SAR",
+  "pack": "超電ブレイカー",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 6400,
+      "buy": 4700,
+      "mercari": 5800
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 6900,
+      "buy": 5100,
+      "mercari": 6100
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 7000,
+      "buy": 5200,
+      "mercari": 6300
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 7000,
+      "buy": 5300,
+      "mercari": 6000
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 7500,
+      "buy": 5500,
+      "mercari": 6500
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 7400,
+      "buy": 5900,
+      "mercari": 6400
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 7600,
+      "buy": 5600,
+      "mercari": 6800
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 7800,
+      "buy": 6300,
+      "mercari": 7100
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 8200,
+      "buy": 6300,
+      "mercari": 7100
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 8500,
+      "buy": 6900,
+      "mercari": 7800
+    }
+  ],
+  "currentSale": 8500,
+  "currentBuy": 6900,
+  "currentMercari": 7800,
+  "initialSale": 6400,
+  "maxSale": 8500,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

@@ -1,0 +1,76 @@
+{
+  "cardId": "umbreon-ex-sar",
+  "cardName": "ブラッキーex SAR",
+  "cardNumber": "334/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 56900,
+      "buy": 42600,
+      "mercari": 51400
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 57700,
+      "buy": 44000,
+      "mercari": 49200
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 56100,
+      "buy": 45200,
+      "mercari": 48000
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 58900,
+      "buy": 48100,
+      "mercari": 54100
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 57300,
+      "buy": 43900,
+      "mercari": 51800
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 60400,
+      "buy": 48800,
+      "mercari": 51800
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 59300,
+      "buy": 46400,
+      "mercari": 51800
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 62200,
+      "buy": 49500,
+      "mercari": 55900
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 62100,
+      "buy": 45400,
+      "mercari": 54300
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 60500,
+      "buy": 46800,
+      "mercari": 54500
+    }
+  ],
+  "currentSale": 60500,
+  "currentBuy": 46800,
+  "currentMercari": 54500,
+  "initialSale": 56900,
+  "maxSale": 62200,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

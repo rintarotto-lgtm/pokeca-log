@@ -1,0 +1,76 @@
+{
+  "boxId": "clay-burst",
+  "name": "クレイバースト BOX",
+  "pack": "クレイバースト",
+  "releaseDate": "2023-04-14",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 41500,
+      "buy": 31200,
+      "mercari": 38000
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 41900,
+      "buy": 31000,
+      "mercari": 37300
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 43000,
+      "buy": 31300,
+      "mercari": 39900
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 43800,
+      "buy": 30700,
+      "mercari": 39600
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 45500,
+      "buy": 32800,
+      "mercari": 42500
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 45100,
+      "buy": 35000,
+      "mercari": 40400
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 46600,
+      "buy": 34100,
+      "mercari": 41400
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 46100,
+      "buy": 34700,
+      "mercari": 41300
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 47900,
+      "buy": 37300,
+      "mercari": 43900
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 48200,
+      "buy": 33900,
+      "mercari": 44500
+    }
+  ],
+  "currentSale": 48200,
+  "currentBuy": 33900,
+  "currentMercari": 44500,
+  "initialSale": 41500,
+  "maxSale": 48200,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

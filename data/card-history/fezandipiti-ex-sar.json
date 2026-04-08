@@ -1,0 +1,76 @@
+{
+  "cardId": "fezandipiti-ex-sar",
+  "cardName": "キチキギスex SAR",
+  "cardNumber": "118/091",
+  "rarity": "SAR",
+  "pack": "超電ブレイカー",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 5900,
+      "buy": 4400,
+      "mercari": 5100
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 5500,
+      "buy": 4100,
+      "mercari": 5000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 5400,
+      "buy": 4300,
+      "mercari": 4800
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 5400,
+      "buy": 4200,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 5000,
+      "buy": 3800,
+      "mercari": 4400
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 4800,
+      "buy": 3500,
+      "mercari": 4300
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 4900,
+      "buy": 3800,
+      "mercari": 4400
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 4400,
+      "buy": 3600,
+      "mercari": 3900
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 4500,
+      "buy": 3400,
+      "mercari": 4100
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 4100,
+      "buy": 3200,
+      "mercari": 3700
+    }
+  ],
+  "currentSale": 4100,
+  "currentBuy": 3200,
+  "currentMercari": 3700,
+  "initialSale": 5900,
+  "maxSale": 5900,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

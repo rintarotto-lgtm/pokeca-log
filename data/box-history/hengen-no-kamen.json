@@ -1,0 +1,76 @@
+{
+  "boxId": "hengen-no-kamen",
+  "name": "変幻の仮面 BOX",
+  "pack": "変幻の仮面",
+  "releaseDate": "2024-07-19",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 5700,
+      "buy": 4400,
+      "mercari": 5200
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 5700,
+      "buy": 4400,
+      "mercari": 5300
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 5700,
+      "buy": 4300,
+      "mercari": 5200
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 5500,
+      "buy": 4200,
+      "mercari": 5000
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 5500,
+      "buy": 3900,
+      "mercari": 5100
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 5500,
+      "buy": 4300,
+      "mercari": 5000
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 5300,
+      "buy": 3800,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 5300,
+      "buy": 3800,
+      "mercari": 4900
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 5300,
+      "buy": 4000,
+      "mercari": 4900
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 5300,
+      "buy": 4000,
+      "mercari": 4800
+    }
+  ],
+  "currentSale": 5300,
+  "currentBuy": 4000,
+  "currentMercari": 4800,
+  "initialSale": 5700,
+  "maxSale": 5700,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

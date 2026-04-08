@@ -1,0 +1,76 @@
+{
+  "boxId": "pokemon-151",
+  "name": "ポケモンカード151 BOX",
+  "pack": "ポケモンカード151",
+  "releaseDate": "2023-06-16",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 28000,
+      "buy": 21800,
+      "mercari": 26200
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 28000,
+      "buy": 20300,
+      "mercari": 26100
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 28400,
+      "buy": 20800,
+      "mercari": 25500
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 29800,
+      "buy": 21000,
+      "mercari": 27700
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 29300,
+      "buy": 20500,
+      "mercari": 26400
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 29600,
+      "buy": 21300,
+      "mercari": 27300
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 30200,
+      "buy": 22900,
+      "mercari": 28000
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 31300,
+      "buy": 23400,
+      "mercari": 28800
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 31400,
+      "buy": 22700,
+      "mercari": 29000
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 31800,
+      "buy": 23700,
+      "mercari": 28000
+    }
+  ],
+  "currentSale": 31800,
+  "currentBuy": 23700,
+  "currentMercari": 28000,
+  "initialSale": 28000,
+  "maxSale": 31800,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

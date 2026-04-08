@@ -1,0 +1,76 @@
+{
+  "boxId": "paradise-dragona",
+  "name": "楽園ドラゴーナ BOX",
+  "pack": "楽園ドラゴーナ",
+  "releaseDate": "2024-04-26",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 7300,
+      "buy": 5600,
+      "mercari": 6700
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 7100,
+      "buy": 5400,
+      "mercari": 6400
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 7100,
+      "buy": 5300,
+      "mercari": 6300
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 6800,
+      "buy": 5300,
+      "mercari": 6100
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 6800,
+      "buy": 5300,
+      "mercari": 6100
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 6700,
+      "buy": 4800,
+      "mercari": 6000
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 6600,
+      "buy": 4800,
+      "mercari": 5900
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 6600,
+      "buy": 4700,
+      "mercari": 6000
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 6500,
+      "buy": 5000,
+      "mercari": 5900
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 6500,
+      "buy": 4700,
+      "mercari": 5900
+    }
+  ],
+  "currentSale": 6500,
+  "currentBuy": 4700,
+  "currentMercari": 5900,
+  "initialSale": 7300,
+  "maxSale": 7300,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

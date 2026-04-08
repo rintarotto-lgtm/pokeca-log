@@ -1,0 +1,76 @@
+{
+  "cardId": "lillie-determination-sar",
+  "cardName": "リーリエの決心 SAR",
+  "cardNumber": "105/080",
+  "rarity": "SAR",
+  "pack": "メガブレイブ",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 41400,
+      "buy": 33500,
+      "mercari": 37900
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 41900,
+      "buy": 33600,
+      "mercari": 38500
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 44700,
+      "buy": 35200,
+      "mercari": 39500
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 43800,
+      "buy": 33400,
+      "mercari": 39600
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 47200,
+      "buy": 37400,
+      "mercari": 40300
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 46700,
+      "buy": 34900,
+      "mercari": 39800
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 49100,
+      "buy": 35900,
+      "mercari": 43500
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 48300,
+      "buy": 35900,
+      "mercari": 43200
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 48900,
+      "buy": 39800,
+      "mercari": 44700
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 50200,
+      "buy": 39200,
+      "mercari": 44100
+    }
+  ],
+  "currentSale": 50200,
+  "currentBuy": 39200,
+  "currentMercari": 44100,
+  "initialSale": 41400,
+  "maxSale": 50200,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

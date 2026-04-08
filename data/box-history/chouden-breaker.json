@@ -1,0 +1,76 @@
+{
+  "boxId": "chouden-breaker",
+  "name": "超電ブレイカー BOX",
+  "pack": "超電ブレイカー",
+  "releaseDate": "2024-10-18",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 5300,
+      "buy": 4000,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 5400,
+      "buy": 3900,
+      "mercari": 5000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 5300,
+      "buy": 3800,
+      "mercari": 4900
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 5200,
+      "buy": 3700,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 5200,
+      "buy": 4000,
+      "mercari": 4800
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 5200,
+      "buy": 4000,
+      "mercari": 4800
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 5100,
+      "buy": 3900,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 5100,
+      "buy": 3800,
+      "mercari": 4700
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 4900,
+      "buy": 3600,
+      "mercari": 4400
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 4800,
+      "buy": 3500,
+      "mercari": 4200
+    }
+  ],
+  "currentSale": 4800,
+  "currentBuy": 3500,
+  "currentMercari": 4200,
+  "initialSale": 5300,
+  "maxSale": 5400,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

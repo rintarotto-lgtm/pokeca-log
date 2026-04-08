@@ -1,0 +1,76 @@
+{
+  "cardId": "mega-dream-ex-mur",
+  "cardName": "メガドリームex MUR",
+  "cardNumber": "121/075",
+  "rarity": "MUR",
+  "pack": "MEGAドリームex",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 63400,
+      "buy": 46400,
+      "mercari": 53900
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 59400,
+      "buy": 44200,
+      "mercari": 51700
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 57500,
+      "buy": 42500,
+      "mercari": 52300
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 57100,
+      "buy": 43300,
+      "mercari": 52300
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 54600,
+      "buy": 42300,
+      "mercari": 47600
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 53200,
+      "buy": 41700,
+      "mercari": 47800
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 54200,
+      "buy": 44400,
+      "mercari": 47600
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 50800,
+      "buy": 38600,
+      "mercari": 45300
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 49000,
+      "buy": 38000,
+      "mercari": 44100
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 49200,
+      "buy": 37900,
+      "mercari": 45200
+    }
+  ],
+  "currentSale": 49200,
+  "currentBuy": 37900,
+  "currentMercari": 45200,
+  "initialSale": 63400,
+  "maxSale": 63400,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

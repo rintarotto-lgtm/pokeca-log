@@ -1,0 +1,76 @@
+{
+  "cardId": "erika-ex-sar",
+  "cardName": "エリカの招待 SAR",
+  "cardNumber": "203/165",
+  "rarity": "SAR",
+  "pack": "ポケモンカード151",
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 52700,
+      "buy": 41400,
+      "mercari": 47900
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 56200,
+      "buy": 41700,
+      "mercari": 50900
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 54600,
+      "buy": 44100,
+      "mercari": 47100
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 56500,
+      "buy": 43600,
+      "mercari": 49300
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 59400,
+      "buy": 43300,
+      "mercari": 51500
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 59500,
+      "buy": 43200,
+      "mercari": 52500
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 59600,
+      "buy": 45400,
+      "mercari": 53600
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 61700,
+      "buy": 48200,
+      "mercari": 56500
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 60800,
+      "buy": 46000,
+      "mercari": 54200
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 64300,
+      "buy": 47300,
+      "mercari": 56500
+    }
+  ],
+  "currentSale": 64300,
+  "currentBuy": 47300,
+  "currentMercari": 56500,
+  "initialSale": 52700,
+  "maxSale": 64300,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}

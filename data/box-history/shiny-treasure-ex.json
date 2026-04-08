@@ -1,0 +1,76 @@
+{
+  "boxId": "shiny-treasure-ex",
+  "name": "シャイニートレジャーex BOX",
+  "pack": "シャイニートレジャーex",
+  "releaseDate": "2023-12-01",
+  "shrinked": true,
+  "history": [
+    {
+      "date": "2026-03-08",
+      "sale": 18100,
+      "buy": 13200,
+      "mercari": 16100
+    },
+    {
+      "date": "2026-03-12",
+      "sale": 18600,
+      "buy": 13500,
+      "mercari": 16800
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 18800,
+      "buy": 13800,
+      "mercari": 17000
+    },
+    {
+      "date": "2026-03-18",
+      "sale": 19000,
+      "buy": 14000,
+      "mercari": 17700
+    },
+    {
+      "date": "2026-03-21",
+      "sale": 19000,
+      "buy": 14200,
+      "mercari": 17300
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 19700,
+      "buy": 15000,
+      "mercari": 18200
+    },
+    {
+      "date": "2026-03-28",
+      "sale": 19900,
+      "buy": 14800,
+      "mercari": 18400
+    },
+    {
+      "date": "2026-04-01",
+      "sale": 20000,
+      "buy": 15400,
+      "mercari": 17800
+    },
+    {
+      "date": "2026-04-04",
+      "sale": 20400,
+      "buy": 15600,
+      "mercari": 18900
+    },
+    {
+      "date": "2026-04-06",
+      "sale": 21000,
+      "buy": 14800,
+      "mercari": 18700
+    }
+  ],
+  "currentSale": 21000,
+  "currentBuy": 14800,
+  "currentMercari": 18700,
+  "initialSale": 18100,
+  "maxSale": 21000,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-06"
+}
