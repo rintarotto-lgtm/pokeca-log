@@ -8,6 +8,7 @@ export interface RankingCard {
   cardNumber: string;
   salePrice: number;
   buyPrice: number;
+  mercariPrice?: number;
   trend: "up" | "down" | "stable";
   highlight: string;
   image: string | null;
@@ -23,7 +24,7 @@ export interface RankingData {
   cards: RankingCard[];
 }
 
-export type SortMode = "rank" | "salePrice" | "buyPrice";
+export type SortMode = "rank" | "salePrice" | "buyPrice" | "mercariPrice";
 
 export function getRanking(rankingId: string): RankingData | null {
   const filePath = path.join(
@@ -48,6 +49,10 @@ export function sortRanking(
     sorted.sort((a, b) => b.salePrice - a.salePrice);
   } else if (mode === "buyPrice") {
     sorted.sort((a, b) => b.buyPrice - a.buyPrice);
+  } else if (mode === "mercariPrice") {
+    sorted.sort(
+      (a, b) => (b.mercariPrice ?? 0) - (a.mercariPrice ?? 0)
+    );
   } else {
     sorted.sort((a, b) => a.rank - b.rank);
   }

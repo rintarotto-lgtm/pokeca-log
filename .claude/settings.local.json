@@ -58,7 +58,8 @@
       "Bash(curl -sLI https://pokeca-log.com/articles/ninja-spinner-atari-matome)",
       "Bash(curl -sL https://www.pokeca-log.com/articles/ninja-spinner-atari-matome)",
       "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'fix: TS正規表現の/sフラグを使わない書き方に変更（ES2017互換）')",
-      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 4本の新規記事追加（チラチーノ・ホミカ・30周年・新弾予想）+スマホ表示改善')"
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: 4本の新規記事追加（チラチーノ・ホミカ・30周年・新弾予想）+スマホ表示改善')",
+      "Bash(git -c user.email=pokeca@example.com -c user.name=pokeca commit -m 'feat: メルカリ相場を3つ目の価格として追加（チャート3本線・ランキング・全記事対応）')"
     ]
   }
 }

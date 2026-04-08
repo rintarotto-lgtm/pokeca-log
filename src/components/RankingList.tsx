@@ -112,23 +112,35 @@ function RankingItem({ card }: { card: RankingCard }) {
               💡 {card.highlight}
             </p>
 
-            <div className="grid grid-cols-2 gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-              <div className="bg-cyan-50 rounded px-2 sm:px-3 py-1.5 sm:py-2 border border-cyan-100">
-                <div className="text-[9px] sm:text-[10px] text-gray-600 font-medium">
-                  販売価格
+            <div
+              className={`grid gap-1.5 sm:gap-2 mb-2 sm:mb-3 ${card.mercariPrice ? "grid-cols-3" : "grid-cols-2"}`}
+            >
+              <div className="bg-cyan-50 rounded px-1.5 sm:px-3 py-1 sm:py-2 border border-cyan-100">
+                <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">
+                  販売
                 </div>
-                <div className="text-sm sm:text-base font-bold text-cyan-700 leading-tight">
+                <div className="text-xs sm:text-base font-bold text-cyan-700 leading-tight">
                   {formatYen(card.salePrice)}
                 </div>
               </div>
-              <div className="bg-pink-50 rounded px-2 sm:px-3 py-1.5 sm:py-2 border border-pink-100">
-                <div className="text-[9px] sm:text-[10px] text-gray-600 font-medium">
-                  買取価格
+              <div className="bg-pink-50 rounded px-1.5 sm:px-3 py-1 sm:py-2 border border-pink-100">
+                <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">
+                  買取
                 </div>
-                <div className="text-sm sm:text-base font-bold text-pink-700 leading-tight">
+                <div className="text-xs sm:text-base font-bold text-pink-700 leading-tight">
                   {formatYen(card.buyPrice)}
                 </div>
               </div>
+              {card.mercariPrice && (
+                <div className="bg-orange-50 rounded px-1.5 sm:px-3 py-1 sm:py-2 border border-orange-100">
+                  <div className="text-[8px] sm:text-[10px] text-gray-600 font-medium">
+                    メルカリ
+                  </div>
+                  <div className="text-xs sm:text-base font-bold text-orange-700 leading-tight">
+                    {formatYen(card.mercariPrice)}
+                  </div>
+                </div>
+              )}
             </div>
 
             <p className="hidden sm:block text-sm text-gray-600 leading-relaxed line-clamp-3">

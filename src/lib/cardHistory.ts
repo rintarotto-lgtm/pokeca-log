@@ -5,6 +5,7 @@ export interface CardPriceHistoryPoint {
   date: string;
   sale: number;
   buy: number;
+  mercari?: number;
 }
 
 export interface CardPriceHistoryData {
@@ -16,6 +17,7 @@ export interface CardPriceHistoryData {
   history: CardPriceHistoryPoint[];
   currentSale: number;
   currentBuy: number;
+  currentMercari?: number;
   initialSale: number;
   maxSale: number;
   source: string;

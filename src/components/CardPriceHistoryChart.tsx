@@ -5,6 +5,7 @@ import type { CardPriceHistoryData } from "@/lib/cardHistory";
 
 const SALE_COLOR = "#06b6d4"; // cyan-500
 const BUY_COLOR = "#ec4899"; // pink-500
+const MERCARI_COLOR = "#f97316"; // orange-500
 
 function formatYen(value: number) {
   return `¥${value.toLocaleString()}`;
@@ -25,23 +26,35 @@ export default function CardPriceHistoryChart({
 }: {
   data: CardPriceHistoryData;
 }) {
-  const { history, cardName, currentSale, currentBuy, initialSale, maxSale } =
-    data;
+  const {
+    history,
+    cardName,
+    currentSale,
+    currentBuy,
+    currentMercari,
+    initialSale,
+    maxSale,
+  } = data;
 
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   if (history.length < 2) return null;
 
-  // Y軸の範囲計算
-  const allValues = history.flatMap((h) => [h.sale, h.buy]);
+  const hasMercari = history.some((h) => typeof h.mercari === "number");
+
+  // Y軸の範囲計算（メルカリも含む）
+  const allValues = history.flatMap((h) => {
+    const vals = [h.sale, h.buy];
+    if (typeof h.mercari === "number") vals.push(h.mercari);
+    return vals;
+  });
   const minPrice = Math.min(...allValues);
   const maxPrice = Math.max(...allValues);
   const yMin = Math.floor((minPrice * 0.95) / 5000) * 5000;
   const yMax = Math.ceil((maxPrice * 1.05) / 5000) * 5000;
   const range = yMax - yMin || 1;
 
-  // チャートのサイズ
   const chartWidth = 100;
   const chartHeight = 280;
   const paddingTop = 20;
@@ -54,16 +67,22 @@ export default function CardPriceHistoryChart({
     return { x, y };
   };
 
-  const buildPath = (key: "sale" | "buy") =>
-    history
-      .map((h, i) => {
-        const point = getPoint(i, h[key]);
-        return `${i === 0 ? "M" : "L"} ${point.x} ${point.y}`;
-      })
+  const buildPath = (key: "sale" | "buy" | "mercari") => {
+    const pts: { x: number; y: number }[] = [];
+    history.forEach((h, i) => {
+      const v = h[key];
+      if (typeof v === "number") {
+        pts.push(getPoint(i, v));
+      }
+    });
+    return pts
+      .map((p, i) => `${i === 0 ? "M" : "L"} ${p.x} ${p.y}`)
       .join(" ");
+  };
 
   const salePath = buildPath("sale");
   const buyPath = buildPath("buy");
+  const mercariPath = hasMercari ? buildPath("mercari") : "";
 
   // Y軸ラベル（5段階）
   const ySteps = 4;
@@ -72,7 +91,6 @@ export default function CardPriceHistoryChart({
     return Math.round(value / 1000) * 1000;
   });
 
-  // マウス位置から最も近いデータポイントのindex を取得
   const handleMouseMove = (e: React.MouseEvent<SVGSVGElement>) => {
     if (!svgRef.current) return;
     const rect = svgRef.current.getBoundingClientRect();
@@ -82,9 +100,7 @@ export default function CardPriceHistoryChart({
     setHoveredIndex(idx);
   };
 
-  const handleMouseLeave = () => {
-    setHoveredIndex(null);
-  };
+  const handleMouseLeave = () => setHoveredIndex(null);
 
   const handleTouchMove = (e: React.TouchEvent<SVGSVGElement>) => {
     if (!svgRef.current || !e.touches[0]) return;
@@ -97,13 +113,24 @@ export default function CardPriceHistoryChart({
 
   const hovered = hoveredIndex !== null ? history[hoveredIndex] : null;
   const hoveredSalePoint =
-    hoveredIndex !== null
-      ? getPoint(hoveredIndex, history[hoveredIndex].sale)
-      : null;
+    hoveredIndex !== null ? getPoint(hoveredIndex, history[hoveredIndex].sale) : null;
   const hoveredBuyPoint =
-    hoveredIndex !== null
-      ? getPoint(hoveredIndex, history[hoveredIndex].buy)
+    hoveredIndex !== null ? getPoint(hoveredIndex, history[hoveredIndex].buy) : null;
+  const hoveredMercariPoint =
+    hoveredIndex !== null && typeof history[hoveredIndex].mercari === "number"
+      ? getPoint(hoveredIndex, history[hoveredIndex].mercari as number)
       : null;
+
+  // tooltip位置計算（最も上にあるポイントの上に表示）
+  const allHoveredPoints = [
+    hoveredSalePoint,
+    hoveredBuyPoint,
+    hoveredMercariPoint,
+  ].filter((p): p is { x: number; y: number } => p !== null);
+  const topY =
+    allHoveredPoints.length > 0
+      ? Math.min(...allHoveredPoints.map((p) => p.y))
+      : 0;
 
   return (
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-6 my-8">
@@ -112,19 +139,35 @@ export default function CardPriceHistoryChart({
         <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-3">
           {cardName} の価格推移
         </h3>
-        <div className="grid grid-cols-2 gap-3 text-sm">
-          <div className="bg-cyan-50 rounded px-3 py-2">
-            <div className="text-xs text-gray-600 mb-1">販売価格</div>
-            <div className="font-bold text-cyan-700 text-lg">
+        <div
+          className={`grid gap-2 sm:gap-3 text-sm ${hasMercari ? "grid-cols-3" : "grid-cols-2"}`}
+        >
+          <div className="bg-cyan-50 rounded px-2 sm:px-3 py-2">
+            <div className="text-[10px] sm:text-xs text-gray-600 mb-1">
+              販売価格
+            </div>
+            <div className="font-bold text-cyan-700 text-sm sm:text-lg leading-tight">
               約 {formatYen(currentSale)}
             </div>
           </div>
-          <div className="bg-pink-50 rounded px-3 py-2">
-            <div className="text-xs text-gray-600 mb-1">買取価格</div>
-            <div className="font-bold text-pink-700 text-lg">
+          <div className="bg-pink-50 rounded px-2 sm:px-3 py-2">
+            <div className="text-[10px] sm:text-xs text-gray-600 mb-1">
+              買取価格
+            </div>
+            <div className="font-bold text-pink-700 text-sm sm:text-lg leading-tight">
               約 {formatYen(currentBuy)}
             </div>
           </div>
+          {hasMercari && currentMercari !== undefined && (
+            <div className="bg-orange-50 rounded px-2 sm:px-3 py-2">
+              <div className="text-[10px] sm:text-xs text-gray-600 mb-1">
+                メルカリ相場
+              </div>
+              <div className="font-bold text-orange-700 text-sm sm:text-lg leading-tight">
+                約 {formatYen(currentMercari)}
+              </div>
+            </div>
+          )}
         </div>
         <div className="grid grid-cols-2 gap-3 text-xs text-gray-600 mt-3">
           <div>
@@ -220,10 +263,28 @@ export default function CardPriceHistoryChart({
                 vectorEffect="non-scaling-stroke"
               />
 
+              {/* メルカリ相場の線 */}
+              {hasMercari && (
+                <path
+                  d={mercariPath}
+                  fill="none"
+                  stroke={MERCARI_COLOR}
+                  strokeWidth="2"
+                  strokeDasharray="3 2"
+                  strokeLinejoin="round"
+                  strokeLinecap="round"
+                  vectorEffect="non-scaling-stroke"
+                />
+              )}
+
               {/* データポイント */}
               {history.map((h, i) => {
                 const sp = getPoint(i, h.sale);
                 const bp = getPoint(i, h.buy);
+                const mp =
+                  typeof h.mercari === "number"
+                    ? getPoint(i, h.mercari)
+                    : null;
                 const isHovered = hoveredIndex === i;
                 return (
                   <g key={i}>
@@ -245,18 +306,29 @@ export default function CardPriceHistoryChart({
                       strokeWidth={isHovered ? 2.5 : 1.5}
                       vectorEffect="non-scaling-stroke"
                     />
+                    {mp && (
+                      <circle
+                        cx={mp.x}
+                        cy={mp.y}
+                        r={isHovered ? 5 : 3}
+                        fill="white"
+                        stroke={MERCARI_COLOR}
+                        strokeWidth={isHovered ? 2.5 : 1.5}
+                        vectorEffect="non-scaling-stroke"
+                      />
+                    )}
                   </g>
                 );
               })}
             </svg>
 
-            {/* Tooltip (HTMLオーバーレイ) */}
+            {/* Tooltip */}
             {hovered && hoveredSalePoint && (
               <div
                 className="absolute pointer-events-none z-10"
                 style={{
                   left: `${hoveredSalePoint.x}%`,
-                  top: `${Math.min(hoveredSalePoint.y, hoveredBuyPoint?.y ?? 0) - 10}px`,
+                  top: `${topY - 10}px`,
                   transform: `translate(${hoveredIndex === 0 ? "0" : hoveredIndex === history.length - 1 ? "-100%" : "-50%"}, -100%)`,
                 }}
               >
@@ -274,7 +346,7 @@ export default function CardPriceHistoryChart({
                       {formatYen(hovered.sale)}
                     </span>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-2 mb-0.5">
                     <span
                       className="inline-block w-2 h-2 rounded-full"
                       style={{ backgroundColor: BUY_COLOR }}
@@ -284,6 +356,18 @@ export default function CardPriceHistoryChart({
                       {formatYen(hovered.buy)}
                     </span>
                   </div>
+                  {typeof hovered.mercari === "number" && (
+                    <div className="flex items-center gap-2">
+                      <span
+                        className="inline-block w-2 h-2 rounded-full"
+                        style={{ backgroundColor: MERCARI_COLOR }}
+                      />
+                      <span>メルカリ：</span>
+                      <span className="font-bold">
+                        {formatYen(hovered.mercari)}
+                      </span>
+                    </div>
+                  )}
                 </div>
               </div>
             )}
@@ -318,25 +402,40 @@ export default function CardPriceHistoryChart({
         </div>
 
         {/* 凡例 */}
-        <div className="flex gap-6 mt-4 justify-center">
+        <div className="flex gap-4 sm:gap-6 mt-4 justify-center flex-wrap">
           <div className="flex items-center gap-2">
             <span
               className="inline-block w-4 h-1 rounded"
               style={{ backgroundColor: SALE_COLOR }}
             />
-            <span className="text-xs text-gray-700 font-medium">
-              販売価格
-            </span>
+            <span className="text-xs text-gray-700 font-medium">販売価格</span>
           </div>
           <div className="flex items-center gap-2">
             <span
               className="inline-block w-4 h-1 rounded"
               style={{ backgroundColor: BUY_COLOR }}
             />
-            <span className="text-xs text-gray-700 font-medium">
-              買取価格
-            </span>
+            <span className="text-xs text-gray-700 font-medium">買取価格</span>
           </div>
+          {hasMercari && (
+            <div className="flex items-center gap-2">
+              <span
+                className="inline-block w-4 h-1 rounded"
+                style={{
+                  backgroundColor: MERCARI_COLOR,
+                  backgroundImage:
+                    "repeating-linear-gradient(90deg, " +
+                    MERCARI_COLOR +
+                    " 0, " +
+                    MERCARI_COLOR +
+                    " 3px, transparent 3px, transparent 5px)",
+                }}
+              />
+              <span className="text-xs text-gray-700 font-medium">
+                メルカリ相場
+              </span>
+            </div>
+          )}
         </div>
       </div>
 
