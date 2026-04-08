@@ -13,8 +13,7 @@
       "mercariPrice": 95000,
       "trend": "down",
       "highlight": "パッケージカード・ピーク118,000円から下落中",
-      "image": "/images/cards/mega-greninja-mur.svg",
-      "imageSource": "https://www.pokemon-card.com/ex/m4/",
+      "image": "/images/cards/mega-greninja-mur.png",
       "articleSlug": "mega-greninja-ex-mur-price",
       "comment": "ニンジャスピナーの目玉カード。封入率約0.9%(111BOXに1枚)の超希少カード。発売初動92,300円、ピーク118,000円から現在は113,000円台。買取は95,000円→75,000円と大きく下落中。"
     },
@@ -29,7 +28,6 @@
       "trend": "up",
       "highlight": "初動から+12.6% 一貫して上昇中",
       "image": "/images/cards/mega-greninja-sar.jpg",
-      "imageSource": "https://www.pokemon-card.com/ex/m4/",
       "articleSlug": "mega-greninja-ex-sar-price",
       "comment": "MURに次ぐ高額カード。SARの中では最高額で、メガゲッコウガが都市を背景にダイナミックに描かれた1枚。MURとは対照的に、初動39,800円から44,800円まで一貫して上昇中。"
     },
@@ -56,7 +54,7 @@
       "mercariPrice": 3800,
       "trend": "stable",
       "highlight": "女性ファン人気No.1",
-      "image": null,
+      "image": "/images/cards/cinccino-sar.png",
       "articleSlug": "cinccino-ex-sar-price",
       "comment": "色とりどりの毛布やクッションに囲まれた可愛らしいチラチーノが描かれた1枚。女性ファンを中心に絶大な人気を誇る。カードパワーは控えめながら、イラスト人気で安定した相場。"
     },
@@ -83,7 +81,7 @@
       "mercariPrice": 1800,
       "trend": "down",
       "highlight": "初動5,480円→1,980円・底値圏",
-      "image": null,
+      "image": "/images/cards/roxie-performance-sar.png",
       "articleSlug": "roxie-performance-sar-price",
       "comment": "トレーナーズSAR。「本命はホミカSAR」とSNSで話題になるほど人気で、イラストの雰囲気がファンに好評。発売初動5,480円から急落して2,000円割れ、現在は底値圏で安定。"
     },
