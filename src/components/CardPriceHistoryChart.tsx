@@ -32,9 +32,14 @@ export default function CardPriceHistoryChart({
     currentSale,
     currentBuy,
     currentMercari,
+    psa10CurrentSale,
+    psa10CurrentBuy,
     initialSale,
     maxSale,
   } = data;
+
+  const hasPsa10 =
+    typeof psa10CurrentSale === "number" || typeof psa10CurrentBuy === "number";
 
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -136,9 +141,14 @@ export default function CardPriceHistoryChart({
     <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-4 sm:p-6 my-8">
       {/* ヘッダー部分 */}
       <div className="border-b pb-4 mb-4">
-        <h3 className="font-bold text-gray-900 text-base sm:text-lg mb-3">
-          {cardName} の価格推移
-        </h3>
+        <div className="flex items-center gap-2 flex-wrap mb-3">
+          <h3 className="font-bold text-gray-900 text-base sm:text-lg">
+            {cardName} の価格推移
+          </h3>
+          <span className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full font-normal">
+            素体
+          </span>
+        </div>
         <div
           className={`grid gap-2 sm:gap-3 text-sm ${hasMercari ? "grid-cols-3" : "grid-cols-2"}`}
         >
@@ -177,6 +187,38 @@ export default function CardPriceHistoryChart({
             過去最高販売価格：<strong>{formatYen(maxSale)}</strong>
           </div>
         </div>
+
+        {/* PSA10 併記 */}
+        {hasPsa10 && (
+          <div className="mt-4 bg-amber-50 border border-amber-200 rounded-lg px-3 py-2">
+            <div className="flex items-center gap-1.5 mb-1.5">
+              <span className="text-xs font-bold text-amber-800">
+                🏅 PSA10 鑑定品の参考価格
+              </span>
+            </div>
+            <div className="grid grid-cols-2 gap-2 text-xs">
+              {typeof psa10CurrentSale === "number" && (
+                <div>
+                  <span className="text-gray-600">販売：</span>
+                  <strong className="text-amber-900">
+                    {formatYen(psa10CurrentSale)}
+                  </strong>
+                </div>
+              )}
+              {typeof psa10CurrentBuy === "number" && (
+                <div>
+                  <span className="text-gray-600">買取：</span>
+                  <strong className="text-amber-900">
+                    {formatYen(psa10CurrentBuy)}
+                  </strong>
+                </div>
+              )}
+            </div>
+            <p className="text-[10px] text-gray-500 mt-1">
+              ※ PSA10鑑定済みの美品価格。グラフは素体価格のみ。
+            </p>
+          </div>
+        )}
       </div>
 
       {/* チャート本体 */}

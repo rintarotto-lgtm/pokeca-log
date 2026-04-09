@@ -1,11 +1,22 @@
 import fs from "fs";
 import path from "path";
 
+/**
+ * カード価格履歴の1ポイント
+ * 全て「素体（未鑑定）」の価格。PSA10は別フィールド。
+ */
 export interface CardPriceHistoryPoint {
   date: string;
+  /** 素体販売価格 */
   sale: number;
+  /** 素体買取価格 */
   buy: number;
+  /** 素体メルカリ相場 */
   mercari?: number;
+  /** PSA10販売価格（鑑定品・任意） */
+  psa10Sale?: number;
+  /** PSA10買取価格（鑑定品・任意） */
+  psa10Buy?: number;
 }
 
 export interface CardPriceHistoryData {
@@ -15,9 +26,16 @@ export interface CardPriceHistoryData {
   rarity: string;
   pack: string;
   history: CardPriceHistoryPoint[];
+  /** 素体の現在販売価格 */
   currentSale: number;
+  /** 素体の現在買取価格 */
   currentBuy: number;
+  /** 素体の現在メルカリ相場 */
   currentMercari?: number;
+  /** PSA10 の現在販売価格（任意） */
+  psa10CurrentSale?: number;
+  /** PSA10 の現在買取価格（任意） */
+  psa10CurrentBuy?: number;
   initialSale: number;
   maxSale: number;
   source: string;

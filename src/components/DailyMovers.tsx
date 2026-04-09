@@ -192,11 +192,17 @@ export default function DailyMovers({
         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2 mb-1">
           <span>📈</span>
           <span>価格変動ランキング</span>
+          <span className="text-[10px] sm:text-xs font-normal bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full ml-1">
+            素体
+          </span>
         </h2>
         {updatedAt && (
           <p className="text-[11px] sm:text-xs text-gray-500 flex items-center gap-1">
             <span>📅</span>
             <span>{formatUpdateDate(updatedAt)} 更新</span>
+            <span className="text-gray-400 ml-1">
+              ・未鑑定（PSA10等は除く）
+            </span>
           </p>
         )}
       </div>
