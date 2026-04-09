@@ -1,0 +1,21 @@
+{
+  "cardId": "paozian-ex-sar",
+  "cardName": "パオジアンex SAR",
+  "cardNumber": "093/071",
+  "rarity": "SAR",
+  "pack": "スノーハザード",
+  "history": [
+    { "date": "2026-03-01", "sale": 6200, "buy": 4000, "mercari": 5800 },
+    { "date": "2026-03-15", "sale": 5800, "buy": 3700, "mercari": 5400 },
+    { "date": "2026-03-25", "sale": 5400, "buy": 3400, "mercari": 5100 },
+    { "date": "2026-04-03", "sale": 5000, "buy": 3100, "mercari": 4850 },
+    { "date": "2026-04-09", "sale": 4780, "buy": 3000, "mercari": 4700 }
+  ],
+  "currentSale": 4780,
+  "currentBuy": 3000,
+  "currentMercari": 4700,
+  "initialSale": 24800,
+  "maxSale": 24800,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

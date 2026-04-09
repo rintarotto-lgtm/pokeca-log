@@ -1,0 +1,23 @@
+{
+  "cardId": "leafeon-ex-sar",
+  "cardName": "リーフィアex SAR",
+  "cardNumber": "236/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 7600, "buy": 6300, "mercari": 7200 },
+    { "date": "2026-03-15", "sale": 7700, "buy": 6500, "mercari": 7300 },
+    { "date": "2026-03-25", "sale": 7900, "buy": 6700, "mercari": 7500 },
+    { "date": "2026-04-03", "sale": 7980, "buy": 6800, "mercari": 7600 },
+    { "date": "2026-04-09", "sale": 7980, "buy": 6800, "mercari": 7650, "psa10Sale": 17100, "psa10Buy": 13500 }
+  ],
+  "currentSale": 7980,
+  "currentBuy": 6800,
+  "currentMercari": 7650,
+  "psa10CurrentSale": 17100,
+  "psa10CurrentBuy": 13500,
+  "initialSale": 7600,
+  "maxSale": 7980,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

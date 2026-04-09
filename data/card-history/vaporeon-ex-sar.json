@@ -1,0 +1,21 @@
+{
+  "cardId": "vaporeon-ex-sar",
+  "cardName": "シャワーズex SAR",
+  "cardNumber": "234/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 7800, "buy": 6200, "mercari": 7400 },
+    { "date": "2026-03-15", "sale": 7900, "buy": 6500, "mercari": 7500 },
+    { "date": "2026-03-25", "sale": 8000, "buy": 6700, "mercari": 7600 },
+    { "date": "2026-04-03", "sale": 8200, "buy": 6800, "mercari": 7700 },
+    { "date": "2026-04-09", "sale": 8240, "buy": 6800, "mercari": 7780 }
+  ],
+  "currentSale": 8240,
+  "currentBuy": 6800,
+  "currentMercari": 7780,
+  "initialSale": 7000,
+  "maxSale": 8240,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

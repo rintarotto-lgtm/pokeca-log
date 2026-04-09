@@ -1,0 +1,21 @@
+{
+  "cardId": "jolteon-ex-sar",
+  "cardName": "サンダースex SAR",
+  "cardNumber": "233/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 6600, "buy": 5000, "mercari": 6200 },
+    { "date": "2026-03-15", "sale": 6800, "buy": 5200, "mercari": 6400 },
+    { "date": "2026-03-25", "sale": 6850, "buy": 5300, "mercari": 6500 },
+    { "date": "2026-04-03", "sale": 6950, "buy": 5400, "mercari": 6550 },
+    { "date": "2026-04-09", "sale": 6980, "buy": 5500, "mercari": 6600 }
+  ],
+  "currentSale": 6980,
+  "currentBuy": 5500,
+  "currentMercari": 6600,
+  "initialSale": 6600,
+  "maxSale": 6980,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

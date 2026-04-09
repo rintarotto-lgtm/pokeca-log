@@ -1,0 +1,23 @@
+{
+  "cardId": "pikachu-ex-sar-terastal",
+  "cardName": "ピカチュウex SAR",
+  "cardNumber": "238/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 52000, "buy": 50000, "mercari": 50000 },
+    { "date": "2026-03-15", "sale": 54000, "buy": 52000, "mercari": 52000 },
+    { "date": "2026-03-25", "sale": 56000, "buy": 53000, "mercari": 53500 },
+    { "date": "2026-04-03", "sale": 57500, "buy": 54500, "mercari": 55000 },
+    { "date": "2026-04-09", "sale": 58000, "buy": 55000, "mercari": 55500, "psa10Sale": 91300, "psa10Buy": 75000 }
+  ],
+  "currentSale": 58000,
+  "currentBuy": 55000,
+  "currentMercari": 55500,
+  "psa10CurrentSale": 91300,
+  "psa10CurrentBuy": 75000,
+  "initialSale": 52000,
+  "maxSale": 58000,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

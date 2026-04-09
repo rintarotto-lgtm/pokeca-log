@@ -5,20 +5,20 @@
   "rarity": "SAR",
   "pack": "バイオレットex",
   "history": [
-    { "date": "2026-01-13", "sale": 14500, "buy": 8900, "mercari": 12000 },
-    { "date": "2026-02-01", "sale": 14800, "buy": 9000, "mercari": 12200 },
-    { "date": "2026-02-25", "sale": 15200, "buy": 9200, "mercari": 12500 },
-    { "date": "2026-03-15", "sale": 15500, "buy": 9400, "mercari": 12800 },
-    { "date": "2026-04-01", "sale": 15600, "buy": 9500, "mercari": 12900 },
-    { "date": "2026-04-09", "sale": 15800, "buy": 9600, "mercari": 13000, "psa10Sale": 32000, "psa10Buy": 25000 }
+    { "date": "2026-01-13", "sale": 16500, "buy": 12000, "mercari": 15500 },
+    { "date": "2026-02-01", "sale": 16800, "buy": 12300, "mercari": 15800 },
+    { "date": "2026-02-25", "sale": 17000, "buy": 12600, "mercari": 16000 },
+    { "date": "2026-03-15", "sale": 17200, "buy": 12800, "mercari": 16200 },
+    { "date": "2026-04-01", "sale": 17300, "buy": 12900, "mercari": 16300 },
+    { "date": "2026-04-09", "sale": 17500, "buy": 13000, "mercari": 16500, "psa10Sale": 48000, "psa10Buy": 38000 }
   ],
-  "currentSale": 15800,
-  "currentBuy": 9600,
-  "currentMercari": 13000,
-  "psa10CurrentSale": 32000,
-  "psa10CurrentBuy": 25000,
-  "initialSale": 14500,
-  "maxSale": 15800,
+  "currentSale": 17500,
+  "currentBuy": 13000,
+  "currentMercari": 16500,
+  "psa10CurrentSale": 48000,
+  "psa10CurrentBuy": 38000,
+  "initialSale": 16500,
+  "maxSale": 17500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-09"
 }

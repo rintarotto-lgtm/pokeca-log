@@ -1,0 +1,23 @@
+{
+  "cardId": "glaceon-ex-sar",
+  "cardName": "グレイシアex SAR",
+  "cardNumber": "239/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 7800, "buy": 6200, "mercari": 7400 },
+    { "date": "2026-03-15", "sale": 7900, "buy": 6500, "mercari": 7500 },
+    { "date": "2026-03-25", "sale": 8100, "buy": 6400, "mercari": 7700 },
+    { "date": "2026-04-03", "sale": 8250, "buy": 5400, "mercari": 7800 },
+    { "date": "2026-04-09", "sale": 8385, "buy": 5200, "mercari": 7900, "psa10Sale": 14400, "psa10Buy": 11000 }
+  ],
+  "currentSale": 8385,
+  "currentBuy": 5200,
+  "currentMercari": 7900,
+  "psa10CurrentSale": 14400,
+  "psa10CurrentBuy": 11000,
+  "initialSale": 9000,
+  "maxSale": 9000,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}
