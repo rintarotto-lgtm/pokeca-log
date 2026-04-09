@@ -1,6 +1,14 @@
 import { getAllArticles, getPopularArticles } from "@/lib/articles";
-import { getGainers, getLosers } from "@/lib/cardHistory";
-import { getBoxGainers, getBoxLosers } from "@/lib/boxHistory";
+import {
+  getGainers,
+  getLosers,
+  getLatestMoverDate,
+} from "@/lib/cardHistory";
+import {
+  getBoxGainers,
+  getBoxLosers,
+  getLatestBoxMoverDate,
+} from "@/lib/boxHistory";
 import ArticleCard from "@/components/ArticleCard";
 import DailyMovers from "@/components/DailyMovers";
 import BoxMovers from "@/components/BoxMovers";
@@ -12,8 +20,10 @@ export default function Home() {
   const popularArticles = getPopularArticles();
   const gainers = getGainers(20);
   const losers = getLosers(20);
+  const latestMoverDate = getLatestMoverDate();
   const boxGainers = getBoxGainers(20);
   const boxLosers = getBoxLosers(20);
+  const latestBoxDate = getLatestBoxMoverDate();
 
   if (articles.length === 0) {
     return (
@@ -69,10 +79,18 @@ export default function Home() {
       </section>
 
       {/* 価格変動ランキング */}
-      <DailyMovers gainers={gainers} losers={losers} />
+      <DailyMovers
+        gainers={gainers}
+        losers={losers}
+        updatedAt={latestMoverDate}
+      />
 
       {/* BOX価格変動ランキング */}
-      <BoxMovers gainers={boxGainers} losers={boxLosers} />
+      <BoxMovers
+        gainers={boxGainers}
+        losers={boxLosers}
+        updatedAt={latestBoxDate}
+      />
 
       {/* 最新記事 */}
       <section className="mb-12">

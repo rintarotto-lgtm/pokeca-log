@@ -5,11 +5,36 @@
   "rarity": "SAR",
   "pack": "ニンジャスピナー",
   "history": [
-    { "date": "2026-03-13", "sale": 3200, "buy": 2300, "mercari": 2800 },
-    { "date": "2026-03-20", "sale": 2800, "buy": 2000, "mercari": 2500 },
-    { "date": "2026-03-27", "sale": 2400, "buy": 1700, "mercari": 2100 },
-    { "date": "2026-04-02", "sale": 2100, "buy": 1550, "mercari": 1900 },
-    { "date": "2026-04-06", "sale": 2000, "buy": 1500, "mercari": 1800 }
+    {
+      "date": "2026-03-13",
+      "sale": 3200,
+      "buy": 2300,
+      "mercari": 2800
+    },
+    {
+      "date": "2026-03-20",
+      "sale": 2800,
+      "buy": 2000,
+      "mercari": 2500
+    },
+    {
+      "date": "2026-03-27",
+      "sale": 2400,
+      "buy": 1700,
+      "mercari": 2100
+    },
+    {
+      "date": "2026-04-02",
+      "sale": 2100,
+      "buy": 1550,
+      "mercari": 1900
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 2000,
+      "buy": 1500,
+      "mercari": 1800
+    }
   ],
   "currentSale": 2000,
   "currentBuy": 1500,
@@ -17,5 +42,5 @@
   "initialSale": 3200,
   "maxSale": 3200,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-04-06"
+  "lastUpdated": "2026-04-09"
 }

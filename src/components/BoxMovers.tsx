@@ -131,21 +131,48 @@ function BoxRow({
   );
 }
 
+function formatUpdateDate(dateStr: string | null): string {
+  if (!dateStr) return "";
+  const d = new Date(dateStr);
+  const now = new Date();
+  const y = d.getFullYear();
+  const m = d.getMonth() + 1;
+  const day = d.getDate();
+  const weekDays = ["日", "月", "火", "水", "木", "金", "土"];
+  const w = weekDays[d.getDay()];
+  const isToday =
+    d.getFullYear() === now.getFullYear() &&
+    d.getMonth() === now.getMonth() &&
+    d.getDate() === now.getDate();
+  const label = isToday ? "（今日）" : "";
+  return `${y}年${m}月${day}日（${w}）${label}`;
+}
+
 export default function BoxMovers({
   gainers,
   losers,
+  updatedAt,
 }: {
   gainers: BoxMover[];
   losers: BoxMover[];
+  updatedAt?: string | null;
 }) {
   if (gainers.length === 0 && losers.length === 0) return null;
 
   return (
     <section className="mb-12">
-      <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2 pb-1 border-b-4 border-orange-400">
-        <span>📦</span>
-        <span>BOX価格変動ランキング</span>
-      </h2>
+      <div className="mb-6 pb-1 border-b-4 border-orange-400">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-900 flex items-center gap-2 mb-1">
+          <span>📦</span>
+          <span>BOX価格変動ランキング</span>
+        </h2>
+        {updatedAt && (
+          <p className="text-[11px] sm:text-xs text-gray-500 flex items-center gap-1">
+            <span>📅</span>
+            <span>{formatUpdateDate(updatedAt)} 更新</span>
+          </p>
+        )}
+      </div>
 
       <div className="space-y-4">
         <BoxRow

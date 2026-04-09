@@ -94,7 +94,17 @@ function fmtForId(cardId: string): { slug: string | null; image: string | null }
 }
 
 /**
+ * ランキング表示の最小閾値
+ * これ以下の変動は「ノイズ扱い」して除外
+ */
+const MIN_ABS_DELTA = 500; // 最低500円以上の変動
+const MIN_CURRENT_PRICE = 3000; // 最低3,000円以上のカードのみ
+
+/**
  * 各カードの直近の販売価格の変動を計算
+ *
+ * 最後のデータポイントと、その直前の「異なる日付」のデータポイントを比較する。
+ * 最終日が今日で、前回更新から7日以上空いていても問題ない。
  */
 export function calculateMovers(
   priceType: "sale" | "buy" | "mercari" = "sale"
@@ -103,7 +113,6 @@ export function calculateMovers(
   const movers: CardMover[] = [];
 
   for (const h of histories) {
-    // 最新と1つ前のデータポイントを取得
     const points = h.history.filter((p) => typeof p[priceType] === "number");
     if (points.length < 2) continue;
 
@@ -113,7 +122,11 @@ export function calculateMovers(
     const currentPrice = current[priceType] as number;
     const previousPrice = previous[priceType] as number;
     const delta = currentPrice - previousPrice;
-    if (delta === 0) continue; // 変動なしはスキップ
+    if (delta === 0) continue;
+
+    // 最低変動額・最低価格フィルター
+    if (Math.abs(delta) < MIN_ABS_DELTA) continue;
+    if (currentPrice < MIN_CURRENT_PRICE) continue;
 
     const deltaPercent = (delta / previousPrice) * 100;
 
@@ -149,4 +162,18 @@ export function getLosers(limit = 5): CardMover[] {
     .filter((m) => m.delta < 0)
     .sort((a, b) => a.deltaPercent - b.deltaPercent)
     .slice(0, limit);
+}
+
+/**
+ * 最新の更新日を取得（全カード履歴の中で最も新しい日付）
+ */
+export function getLatestMoverDate(): string | null {
+  const histories = getAllCardHistories();
+  let latest: string | null = null;
+  for (const h of histories) {
+    if (h.history.length === 0) continue;
+    const d = h.history[h.history.length - 1].date;
+    if (!latest || d > latest) latest = d;
+  }
+  return latest;
 }

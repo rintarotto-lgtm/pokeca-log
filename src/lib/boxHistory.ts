@@ -59,6 +59,12 @@ export function getBoxHistory(boxId: string): BoxPriceHistoryData | null {
   return JSON.parse(raw) as BoxPriceHistoryData;
 }
 
+/**
+ * BOXランキングの最小閾値
+ */
+const BOX_MIN_ABS_DELTA = 500; // 最低500円以上の変動
+const BOX_MIN_CURRENT_PRICE = 5000; // 最低5,000円以上のBOXのみ
+
 export function calculateBoxMovers(
   priceType: "sale" | "buy" | "mercari" = "sale"
 ): BoxMover[] {
@@ -78,6 +84,10 @@ export function calculateBoxMovers(
     const previousPrice = previous[priceType] as number;
     const delta = currentPrice - previousPrice;
     if (delta === 0) continue;
+
+    // 最低変動額・最低価格フィルター
+    if (Math.abs(delta) < BOX_MIN_ABS_DELTA) continue;
+    if (currentPrice < BOX_MIN_CURRENT_PRICE) continue;
 
     const deltaPercent = (delta / previousPrice) * 100;
 
@@ -111,4 +121,18 @@ export function getBoxLosers(limit = 20): BoxMover[] {
     .filter((m) => m.delta < 0)
     .sort((a, b) => a.deltaPercent - b.deltaPercent)
     .slice(0, limit);
+}
+
+/**
+ * BOX履歴の最新更新日を取得
+ */
+export function getLatestBoxMoverDate(): string | null {
+  const boxes = getAllBoxHistories();
+  let latest: string | null = null;
+  for (const b of boxes) {
+    if (b.history.length === 0) continue;
+    const d = b.history[b.history.length - 1].date;
+    if (!latest || d > latest) latest = d;
+  }
+  return latest;
 }
