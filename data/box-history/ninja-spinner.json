@@ -7,70 +7,70 @@
   "history": [
     {
       "date": "2026-03-08",
-      "sale": 10000,
+      "sale": 9700,
       "buy": 7300,
-      "mercari": 8900
+      "mercari": 8800
     },
     {
       "date": "2026-03-12",
-      "sale": 9700,
-      "buy": 6900,
-      "mercari": 8600
+      "sale": 9800,
+      "buy": 7400,
+      "mercari": 9200
     },
     {
       "date": "2026-03-15",
-      "sale": 10100,
-      "buy": 7500,
-      "mercari": 9300
+      "sale": 10000,
+      "buy": 7600,
+      "mercari": 9400
     },
     {
       "date": "2026-03-18",
       "sale": 10100,
-      "buy": 7600,
-      "mercari": 8900
+      "buy": 7700,
+      "mercari": 9500
     },
     {
       "date": "2026-03-21",
-      "sale": 10200,
-      "buy": 7200,
-      "mercari": 9300
+      "sale": 10000,
+      "buy": 7600,
+      "mercari": 9500
     },
     {
       "date": "2026-03-25",
-      "sale": 10100,
-      "buy": 7600,
-      "mercari": 9300
+      "sale": 10300,
+      "buy": 7700,
+      "mercari": 9400
     },
     {
       "date": "2026-03-28",
-      "sale": 10200,
-      "buy": 7900,
-      "mercari": 9200
+      "sale": 10300,
+      "buy": 7400,
+      "mercari": 9600
     },
     {
       "date": "2026-04-01",
       "sale": 10500,
-      "buy": 7900,
-      "mercari": 9600
+      "buy": 7600,
+      "mercari": 9900
     },
     {
       "date": "2026-04-04",
-      "sale": 10400,
-      "buy": 8000,
-      "mercari": 9400
+      "sale": 10500,
+      "buy": 8300,
+      "mercari": 9800
     },
     {
       "date": "2026-04-06",
-      "sale": 10400,
-      "buy": 7600,
-      "mercari": 9300
+      "sale": 10600,
+      "buy": 8200,
+      "mercari": 9900
     }
   ],
-  "currentSale": 10400,
-  "currentBuy": 7600,
-  "currentMercari": 9300,
-  "initialSale": 10000,
-  "maxSale": 10500,
+  "currentSale": 10600,
+  "currentBuy": 8200,
+  "currentMercari": 9900,
+  "initialSale": 9700,
+  "maxSale": 10600,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-06"
 }

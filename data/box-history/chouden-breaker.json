@@ -7,70 +7,70 @@
   "history": [
     {
       "date": "2026-03-08",
-      "sale": 5300,
-      "buy": 4000,
-      "mercari": 4700
+      "sale": 15900,
+      "buy": 11700,
+      "mercari": 14700
     },
     {
       "date": "2026-03-12",
-      "sale": 5400,
-      "buy": 3900,
-      "mercari": 5000
+      "sale": 16600,
+      "buy": 12300,
+      "mercari": 15500
     },
     {
       "date": "2026-03-15",
-      "sale": 5300,
-      "buy": 3800,
-      "mercari": 4900
+      "sale": 17800,
+      "buy": 13400,
+      "mercari": 16400
     },
     {
       "date": "2026-03-18",
-      "sale": 5200,
-      "buy": 3700,
-      "mercari": 4700
+      "sale": 18600,
+      "buy": 14000,
+      "mercari": 17600
     },
     {
       "date": "2026-03-21",
-      "sale": 5200,
-      "buy": 4000,
-      "mercari": 4800
+      "sale": 19500,
+      "buy": 14100,
+      "mercari": 17800
     },
     {
       "date": "2026-03-25",
-      "sale": 5200,
-      "buy": 4000,
-      "mercari": 4800
+      "sale": 20600,
+      "buy": 16200,
+      "mercari": 19200
     },
     {
       "date": "2026-03-28",
-      "sale": 5100,
-      "buy": 3900,
-      "mercari": 4700
+      "sale": 21500,
+      "buy": 16300,
+      "mercari": 19900
     },
     {
       "date": "2026-04-01",
-      "sale": 5100,
-      "buy": 3800,
-      "mercari": 4700
+      "sale": 22400,
+      "buy": 16300,
+      "mercari": 20400
     },
     {
       "date": "2026-04-04",
-      "sale": 4900,
-      "buy": 3600,
-      "mercari": 4400
+      "sale": 23200,
+      "buy": 18300,
+      "mercari": 21500
     },
     {
       "date": "2026-04-06",
-      "sale": 4800,
-      "buy": 3500,
-      "mercari": 4200
+      "sale": 24000,
+      "buy": 19000,
+      "mercari": 21800
     }
   ],
-  "currentSale": 4800,
-  "currentBuy": 3500,
-  "currentMercari": 4200,
-  "initialSale": 5300,
-  "maxSale": 5400,
+  "currentSale": 24000,
+  "currentBuy": 19000,
+  "currentMercari": 21800,
+  "initialSale": 15900,
+  "maxSale": 24000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-06"
 }

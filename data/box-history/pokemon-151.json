@@ -7,70 +7,70 @@
   "history": [
     {
       "date": "2026-03-08",
-      "sale": 28000,
-      "buy": 21800,
-      "mercari": 26200
+      "sale": 65200,
+      "buy": 50300,
+      "mercari": 60500
     },
     {
       "date": "2026-03-12",
-      "sale": 28000,
-      "buy": 20300,
-      "mercari": 26100
+      "sale": 67200,
+      "buy": 48700,
+      "mercari": 63400
     },
     {
       "date": "2026-03-15",
-      "sale": 28400,
-      "buy": 20800,
-      "mercari": 25500
+      "sale": 66700,
+      "buy": 50300,
+      "mercari": 60700
     },
     {
       "date": "2026-03-18",
-      "sale": 29800,
-      "buy": 21000,
-      "mercari": 27700
+      "sale": 67700,
+      "buy": 49200,
+      "mercari": 62000
     },
     {
       "date": "2026-03-21",
-      "sale": 29300,
-      "buy": 20500,
-      "mercari": 26400
+      "sale": 68200,
+      "buy": 50400,
+      "mercari": 63600
     },
     {
       "date": "2026-03-25",
-      "sale": 29600,
-      "buy": 21300,
-      "mercari": 27300
+      "sale": 68700,
+      "buy": 50000,
+      "mercari": 64900
     },
     {
       "date": "2026-03-28",
-      "sale": 30200,
-      "buy": 22900,
-      "mercari": 28000
+      "sale": 69300,
+      "buy": 51900,
+      "mercari": 63600
     },
     {
       "date": "2026-04-01",
-      "sale": 31300,
-      "buy": 23400,
-      "mercari": 28800
+      "sale": 70300,
+      "buy": 52300,
+      "mercari": 65000
     },
     {
       "date": "2026-04-04",
-      "sale": 31400,
-      "buy": 22700,
-      "mercari": 29000
+      "sale": 72100,
+      "buy": 56500,
+      "mercari": 66600
     },
     {
       "date": "2026-04-06",
-      "sale": 31800,
-      "buy": 23700,
-      "mercari": 28000
+      "sale": 72000,
+      "buy": 55600,
+      "mercari": 65600
     }
   ],
-  "currentSale": 31800,
-  "currentBuy": 23700,
-  "currentMercari": 28000,
-  "initialSale": 28000,
-  "maxSale": 31800,
+  "currentSale": 72000,
+  "currentBuy": 55600,
+  "currentMercari": 65600,
+  "initialSale": 65200,
+  "maxSale": 72100,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-06"
 }

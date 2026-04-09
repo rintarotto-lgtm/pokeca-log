@@ -7,70 +7,70 @@
   "history": [
     {
       "date": "2026-03-08",
-      "sale": 9700,
-      "buy": 7100,
-      "mercari": 9100
+      "sale": 10600,
+      "buy": 7900,
+      "mercari": 9900
     },
     {
       "date": "2026-03-12",
-      "sale": 10000,
-      "buy": 7300,
-      "mercari": 8800
+      "sale": 10500,
+      "buy": 8300,
+      "mercari": 9500
     },
     {
       "date": "2026-03-15",
-      "sale": 10000,
-      "buy": 7200,
-      "mercari": 8800
+      "sale": 10700,
+      "buy": 8300,
+      "mercari": 10000
     },
     {
       "date": "2026-03-18",
-      "sale": 10100,
-      "buy": 7200,
-      "mercari": 9400
+      "sale": 10800,
+      "buy": 8500,
+      "mercari": 10200
     },
     {
       "date": "2026-03-21",
-      "sale": 10600,
-      "buy": 8100,
-      "mercari": 9900
+      "sale": 10900,
+      "buy": 8300,
+      "mercari": 10300
     },
     {
       "date": "2026-03-25",
-      "sale": 10700,
-      "buy": 7900,
-      "mercari": 9600
+      "sale": 11100,
+      "buy": 8500,
+      "mercari": 10000
     },
     {
       "date": "2026-03-28",
-      "sale": 10800,
-      "buy": 8300,
-      "mercari": 9900
+      "sale": 11100,
+      "buy": 8400,
+      "mercari": 10200
     },
     {
       "date": "2026-04-01",
-      "sale": 11000,
-      "buy": 7800,
-      "mercari": 10100
+      "sale": 11400,
+      "buy": 9100,
+      "mercari": 10600
     },
     {
       "date": "2026-04-04",
-      "sale": 11300,
-      "buy": 8500,
-      "mercari": 10100
+      "sale": 11400,
+      "buy": 8900,
+      "mercari": 10600
     },
     {
       "date": "2026-04-06",
-      "sale": 11400,
-      "buy": 8800,
-      "mercari": 10300
+      "sale": 11500,
+      "buy": 8500,
+      "mercari": 10400
     }
   ],
-  "currentSale": 11400,
-  "currentBuy": 8800,
-  "currentMercari": 10300,
-  "initialSale": 9700,
-  "maxSale": 11400,
+  "currentSale": 11500,
+  "currentBuy": 8500,
+  "currentMercari": 10400,
+  "initialSale": 10600,
+  "maxSale": 11500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-06"
 }

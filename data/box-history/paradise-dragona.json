@@ -7,70 +7,70 @@
   "history": [
     {
       "date": "2026-03-08",
-      "sale": 7300,
-      "buy": 5600,
-      "mercari": 6700
+      "sale": 5200,
+      "buy": 4000,
+      "mercari": 4700
     },
     {
       "date": "2026-03-12",
-      "sale": 7100,
-      "buy": 5400,
-      "mercari": 6400
+      "sale": 5200,
+      "buy": 4100,
+      "mercari": 4800
     },
     {
       "date": "2026-03-15",
-      "sale": 7100,
-      "buy": 5300,
-      "mercari": 6300
+      "sale": 5200,
+      "buy": 3900,
+      "mercari": 4900
     },
     {
       "date": "2026-03-18",
-      "sale": 6800,
-      "buy": 5300,
-      "mercari": 6100
+      "sale": 5100,
+      "buy": 3700,
+      "mercari": 4700
     },
     {
       "date": "2026-03-21",
-      "sale": 6800,
-      "buy": 5300,
-      "mercari": 6100
+      "sale": 5000,
+      "buy": 4000,
+      "mercari": 4500
     },
     {
       "date": "2026-03-25",
-      "sale": 6700,
-      "buy": 4800,
-      "mercari": 6000
+      "sale": 5000,
+      "buy": 3800,
+      "mercari": 4600
     },
     {
       "date": "2026-03-28",
-      "sale": 6600,
-      "buy": 4800,
-      "mercari": 5900
+      "sale": 5000,
+      "buy": 4000,
+      "mercari": 4600
     },
     {
       "date": "2026-04-01",
-      "sale": 6600,
-      "buy": 4700,
-      "mercari": 6000
+      "sale": 4900,
+      "buy": 3900,
+      "mercari": 4500
     },
     {
       "date": "2026-04-04",
-      "sale": 6500,
-      "buy": 5000,
-      "mercari": 5900
+      "sale": 4900,
+      "buy": 3800,
+      "mercari": 4600
     },
     {
       "date": "2026-04-06",
-      "sale": 6500,
-      "buy": 4700,
-      "mercari": 5900
+      "sale": 4800,
+      "buy": 3800,
+      "mercari": 4400
     }
   ],
-  "currentSale": 6500,
-  "currentBuy": 4700,
-  "currentMercari": 5900,
-  "initialSale": 7300,
-  "maxSale": 7300,
+  "currentSale": 4800,
+  "currentBuy": 3800,
+  "currentMercari": 4400,
+  "initialSale": 5200,
+  "maxSale": 5200,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-06"
 }
