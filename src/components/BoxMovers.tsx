@@ -55,14 +55,14 @@ function BoxCard({
           {mover.name}
         </h4>
 
-        {/* 変動率 */}
+        {/* 変動額（大きく）＋変動率（小さく） */}
         <div className={`${deltaBg} rounded px-1.5 py-1 text-center`}>
           <div className={`text-sm font-black ${deltaColor} leading-tight`}>
-            {arrow} {Math.abs(mover.deltaPercent).toFixed(1)}%
+            {arrow} {sign}
+            {formatYen(mover.delta)}
           </div>
           <div className={`text-[9px] ${deltaColor} font-bold mt-0.5`}>
-            {sign}
-            {formatYen(mover.delta)}
+            {Math.abs(mover.deltaPercent).toFixed(1)}%
           </div>
         </div>
 

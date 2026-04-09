@@ -112,14 +112,14 @@ export function calculateBoxMovers(
 export function getBoxGainers(limit = 20): BoxMover[] {
   return calculateBoxMovers()
     .filter((m) => m.delta > 0)
-    .sort((a, b) => b.deltaPercent - a.deltaPercent)
+    .sort((a, b) => b.delta - a.delta) // 変動額の大きい順
     .slice(0, limit);
 }
 
 export function getBoxLosers(limit = 20): BoxMover[] {
   return calculateBoxMovers()
     .filter((m) => m.delta < 0)
-    .sort((a, b) => a.deltaPercent - b.deltaPercent)
+    .sort((a, b) => a.delta - b.delta) // 下落額の大きい順
     .slice(0, limit);
 }
 
