@@ -1,0 +1,21 @@
+{
+  "cardId": "dragapult-sar",
+  "cardName": "ドラパルトex SAR",
+  "cardNumber": "336/190",
+  "rarity": "SAR",
+  "pack": "テラスタルフェスex",
+  "history": [
+    { "date": "2026-03-01", "sale": 1900, "buy": 1200, "mercari": 1700 },
+    { "date": "2026-03-15", "sale": 2000, "buy": 1300, "mercari": 1800 },
+    { "date": "2026-03-25", "sale": 2080, "buy": 1400, "mercari": 1900 },
+    { "date": "2026-04-03", "sale": 2150, "buy": 1500, "mercari": 2000 },
+    { "date": "2026-04-09", "sale": 2180, "buy": 1580, "mercari": 2050 }
+  ],
+  "currentSale": 2180,
+  "currentBuy": 1580,
+  "currentMercari": 2050,
+  "initialSale": 1900,
+  "maxSale": 2180,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

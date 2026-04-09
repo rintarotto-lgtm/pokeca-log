@@ -1,0 +1,23 @@
+{
+  "cardId": "gachiguma-akatsuki-sar",
+  "cardName": "ガチグマ アカツキex SAR",
+  "cardNumber": "128/106",
+  "rarity": "SAR",
+  "pack": "ナイトワンダラー",
+  "history": [
+    { "date": "2026-03-01", "sale": 950, "buy": 650, "mercari": 850 },
+    { "date": "2026-03-15", "sale": 1000, "buy": 700, "mercari": 900 },
+    { "date": "2026-03-25", "sale": 1040, "buy": 750, "mercari": 950 },
+    { "date": "2026-04-03", "sale": 1070, "buy": 780, "mercari": 980 },
+    { "date": "2026-04-09", "sale": 1080, "buy": 800, "mercari": 1000, "psa10Sale": 5500, "psa10Buy": 4500 }
+  ],
+  "currentSale": 1080,
+  "currentBuy": 800,
+  "currentMercari": 1000,
+  "psa10CurrentSale": 5500,
+  "psa10CurrentBuy": 4500,
+  "initialSale": 950,
+  "maxSale": 1080,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

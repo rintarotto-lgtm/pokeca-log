@@ -1,0 +1,21 @@
+{
+  "cardId": "oorim-sar",
+  "cardName": "オーリム博士の気迫 SAR",
+  "cardNumber": "258/190",
+  "rarity": "SAR",
+  "pack": "スカーレットex",
+  "history": [
+    { "date": "2026-03-01", "sale": 1200, "buy": 750, "mercari": 1100 },
+    { "date": "2026-03-15", "sale": 1250, "buy": 800, "mercari": 1150 },
+    { "date": "2026-03-25", "sale": 1300, "buy": 850, "mercari": 1200 },
+    { "date": "2026-04-03", "sale": 1330, "buy": 880, "mercari": 1230 },
+    { "date": "2026-04-09", "sale": 1350, "buy": 900, "mercari": 1250 }
+  ],
+  "currentSale": 1350,
+  "currentBuy": 900,
+  "currentMercari": 1250,
+  "initialSale": 1200,
+  "maxSale": 1350,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}

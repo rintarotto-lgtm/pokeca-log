@@ -1,0 +1,21 @@
+{
+  "cardId": "todoroku-tsuki-sar",
+  "cardName": "トドロクツキex SAR",
+  "cardNumber": "337/190",
+  "rarity": "SAR",
+  "pack": "シャイニートレジャーex",
+  "history": [
+    { "date": "2026-03-01", "sale": 8500, "buy": 5500, "mercari": 7500 },
+    { "date": "2026-03-15", "sale": 7800, "buy": 5000, "mercari": 7000 },
+    { "date": "2026-03-25", "sale": 7200, "buy": 4700, "mercari": 6700 },
+    { "date": "2026-04-03", "sale": 6800, "buy": 4500, "mercari": 6400 },
+    { "date": "2026-04-09", "sale": 6654, "buy": 4400, "mercari": 6300 }
+  ],
+  "currentSale": 6654,
+  "currentBuy": 4400,
+  "currentMercari": 6300,
+  "initialSale": 11820,
+  "maxSale": 11820,
+  "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
+  "lastUpdated": "2026-04-09"
+}
