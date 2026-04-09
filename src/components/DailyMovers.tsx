@@ -177,7 +177,7 @@ export default function DailyMovers({
       <div className="space-y-4">
         {/* 上段：上昇中 */}
         <MoverRow
-          title={`🔥 上昇中のカード TOP${Math.min(gainers.length, 10)}`}
+          title={`🔥 上昇中のカード TOP${gainers.length}`}
           icon="📈"
           movers={gainers}
           type="gainer"
@@ -186,7 +186,7 @@ export default function DailyMovers({
 
         {/* 下段：下落中 */}
         <MoverRow
-          title={`📉 下落中のカード TOP${Math.min(losers.length, 10)}`}
+          title={`📉 下落中のカード TOP${losers.length}`}
           icon="📉"
           movers={losers}
           type="loser"

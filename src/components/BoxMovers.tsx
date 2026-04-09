@@ -149,14 +149,14 @@ export default function BoxMovers({
 
       <div className="space-y-4">
         <BoxRow
-          title={`🔥 上昇中のBOX TOP${Math.min(gainers.length, 20)}`}
+          title={`🔥 上昇中のBOX TOP${gainers.length}`}
           icon="📈"
           movers={gainers}
           type="gainer"
           gradient="bg-gradient-to-r from-pink-500 to-rose-500"
         />
         <BoxRow
-          title={`📉 下落中のBOX TOP${Math.min(losers.length, 20)}`}
+          title={`📉 下落中のBOX TOP${losers.length}`}
           icon="📉"
           movers={losers}
           type="loser"
