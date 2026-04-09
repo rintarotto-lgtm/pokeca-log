@@ -1,76 +1,24 @@
 {
   "cardId": "mimosa-sar",
   "cardName": "ミモザ SAR",
-  "cardNumber": "194/190",
+  "cardNumber": "105/078",
   "rarity": "SAR",
   "pack": "バイオレットex",
   "history": [
-    {
-      "date": "2026-03-08",
-      "sale": 68400,
-      "buy": 51200,
-      "mercari": 60600
-    },
-    {
-      "date": "2026-03-12",
-      "sale": 67500,
-      "buy": 52900,
-      "mercari": 61200
-    },
-    {
-      "date": "2026-03-15",
-      "sale": 70400,
-      "buy": 55500,
-      "mercari": 64400
-    },
-    {
-      "date": "2026-03-18",
-      "sale": 74500,
-      "buy": 54600,
-      "mercari": 68200
-    },
-    {
-      "date": "2026-03-21",
-      "sale": 75600,
-      "buy": 60300,
-      "mercari": 65500
-    },
-    {
-      "date": "2026-03-25",
-      "sale": 76600,
-      "buy": 60100,
-      "mercari": 67400
-    },
-    {
-      "date": "2026-03-28",
-      "sale": 76900,
-      "buy": 58000,
-      "mercari": 68200
-    },
-    {
-      "date": "2026-04-01",
-      "sale": 80000,
-      "buy": 65500,
-      "mercari": 70500
-    },
-    {
-      "date": "2026-04-04",
-      "sale": 78100,
-      "buy": 62000,
-      "mercari": 70200
-    },
-    {
-      "date": "2026-04-09",
-      "sale": 82500,
-      "buy": 66900,
-      "mercari": 74900
-    }
+    { "date": "2026-01-13", "sale": 14500, "buy": 8900, "mercari": 12000 },
+    { "date": "2026-02-01", "sale": 14800, "buy": 9000, "mercari": 12200 },
+    { "date": "2026-02-25", "sale": 15200, "buy": 9200, "mercari": 12500 },
+    { "date": "2026-03-15", "sale": 15500, "buy": 9400, "mercari": 12800 },
+    { "date": "2026-04-01", "sale": 15600, "buy": 9500, "mercari": 12900 },
+    { "date": "2026-04-09", "sale": 15800, "buy": 9600, "mercari": 13000, "psa10Sale": 32000, "psa10Buy": 25000 }
   ],
-  "currentSale": 82500,
-  "currentBuy": 66900,
-  "currentMercari": 74900,
-  "initialSale": 68400,
-  "maxSale": 82500,
+  "currentSale": 15800,
+  "currentBuy": 9600,
+  "currentMercari": 13000,
+  "psa10CurrentSale": 32000,
+  "psa10CurrentBuy": 25000,
+  "initialSale": 14500,
+  "maxSale": 15800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-09"
 }

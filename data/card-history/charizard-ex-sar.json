@@ -5,72 +5,19 @@
   "rarity": "SAR",
   "pack": "ポケモンカード151",
   "history": [
-    {
-      "date": "2026-03-08",
-      "sale": 41600,
-      "buy": 31600,
-      "mercari": 36100
-    },
-    {
-      "date": "2026-03-12",
-      "sale": 41800,
-      "buy": 31400,
-      "mercari": 35900
-    },
-    {
-      "date": "2026-03-15",
-      "sale": 43700,
-      "buy": 35400,
-      "mercari": 38200
-    },
-    {
-      "date": "2026-03-18",
-      "sale": 45200,
-      "buy": 33900,
-      "mercari": 40900
-    },
-    {
-      "date": "2026-03-21",
-      "sale": 44600,
-      "buy": 33000,
-      "mercari": 40800
-    },
-    {
-      "date": "2026-03-25",
-      "sale": 44300,
-      "buy": 36100,
-      "mercari": 37800
-    },
-    {
-      "date": "2026-03-28",
-      "sale": 46100,
-      "buy": 36800,
-      "mercari": 40500
-    },
-    {
-      "date": "2026-04-01",
-      "sale": 45800,
-      "buy": 37500,
-      "mercari": 42000
-    },
-    {
-      "date": "2026-04-04",
-      "sale": 48500,
-      "buy": 38200,
-      "mercari": 42100
-    },
-    {
-      "date": "2026-04-09",
-      "sale": 48300,
-      "buy": 36200,
-      "mercari": 42600
-    }
+    { "date": "2026-03-01", "sale": 58000, "buy": 52000, "mercari": 55000 },
+    { "date": "2026-03-15", "sale": 60000, "buy": 54000, "mercari": 57000 },
+    { "date": "2026-03-25", "sale": 62000, "buy": 55000, "mercari": 58500 },
+    { "date": "2026-04-03", "sale": 64000, "buy": 57000, "mercari": 60500 },
+    { "date": "2026-04-09", "sale": 64800, "buy": 58000, "mercari": 61500, "psa10Sale": 145000, "psa10Buy": 125000 }
   ],
-  "currentSale": 48300,
-  "currentBuy": 36200,
-  "currentMercari": 42600,
-  "initialSale": 41600,
-  "maxSale": 48500,
+  "currentSale": 64800,
+  "currentBuy": 58000,
+  "currentMercari": 61500,
+  "psa10CurrentSale": 145000,
+  "psa10CurrentBuy": 125000,
+  "initialSale": 58000,
+  "maxSale": 64800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-09"
 }

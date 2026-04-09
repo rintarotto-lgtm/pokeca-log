@@ -1,76 +1,21 @@
 {
   "cardId": "iono-shiny-sar",
-  "cardName": "ナンジャモ SAR",
+  "cardName": "ナンジャモ SAR（シャイニートレジャーex）",
   "cardNumber": "335/190",
   "rarity": "SAR",
   "pack": "シャイニートレジャーex",
   "history": [
-    {
-      "date": "2026-03-08",
-      "sale": 14300,
-      "buy": 11500,
-      "mercari": 12500
-    },
-    {
-      "date": "2026-03-12",
-      "sale": 14000,
-      "buy": 11100,
-      "mercari": 12100
-    },
-    {
-      "date": "2026-03-15",
-      "sale": 14400,
-      "buy": 11500,
-      "mercari": 12300
-    },
-    {
-      "date": "2026-03-18",
-      "sale": 15600,
-      "buy": 12000,
-      "mercari": 14100
-    },
-    {
-      "date": "2026-03-21",
-      "sale": 15100,
-      "buy": 11600,
-      "mercari": 13300
-    },
-    {
-      "date": "2026-03-25",
-      "sale": 16400,
-      "buy": 12700,
-      "mercari": 15000
-    },
-    {
-      "date": "2026-03-28",
-      "sale": 16300,
-      "buy": 12000,
-      "mercari": 14100
-    },
-    {
-      "date": "2026-04-01",
-      "sale": 16300,
-      "buy": 11900,
-      "mercari": 14400
-    },
-    {
-      "date": "2026-04-04",
-      "sale": 17600,
-      "buy": 13200,
-      "mercari": 15000
-    },
-    {
-      "date": "2026-04-09",
-      "sale": 17600,
-      "buy": 12700,
-      "mercari": 15500
-    }
+    { "date": "2026-03-01", "sale": 14000, "buy": 10500, "mercari": 12500 },
+    { "date": "2026-03-15", "sale": 14500, "buy": 10800, "mercari": 12800 },
+    { "date": "2026-03-25", "sale": 14800, "buy": 11000, "mercari": 13000 },
+    { "date": "2026-04-03", "sale": 14800, "buy": 11000, "mercari": 13000 },
+    { "date": "2026-04-09", "sale": 14800, "buy": 11000, "mercari": 13000 }
   ],
-  "currentSale": 17600,
-  "currentBuy": 12700,
-  "currentMercari": 15500,
-  "initialSale": 14300,
-  "maxSale": 17600,
+  "currentSale": 14800,
+  "currentBuy": 11000,
+  "currentMercari": 13000,
+  "initialSale": 14000,
+  "maxSale": 14800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-09"
 }

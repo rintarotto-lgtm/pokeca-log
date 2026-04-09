@@ -5,72 +5,19 @@
   "rarity": "SAR",
   "pack": "テラスタルフェスex",
   "history": [
-    {
-      "date": "2026-03-08",
-      "sale": 56900,
-      "buy": 42600,
-      "mercari": 51400
-    },
-    {
-      "date": "2026-03-12",
-      "sale": 57700,
-      "buy": 44000,
-      "mercari": 49200
-    },
-    {
-      "date": "2026-03-15",
-      "sale": 56100,
-      "buy": 45200,
-      "mercari": 48000
-    },
-    {
-      "date": "2026-03-18",
-      "sale": 58900,
-      "buy": 48100,
-      "mercari": 54100
-    },
-    {
-      "date": "2026-03-21",
-      "sale": 57300,
-      "buy": 43900,
-      "mercari": 51800
-    },
-    {
-      "date": "2026-03-25",
-      "sale": 60400,
-      "buy": 48800,
-      "mercari": 51800
-    },
-    {
-      "date": "2026-03-28",
-      "sale": 59300,
-      "buy": 46400,
-      "mercari": 51800
-    },
-    {
-      "date": "2026-04-01",
-      "sale": 62200,
-      "buy": 49500,
-      "mercari": 55900
-    },
-    {
-      "date": "2026-04-04",
-      "sale": 62100,
-      "buy": 45400,
-      "mercari": 54300
-    },
-    {
-      "date": "2026-04-09",
-      "sale": 60500,
-      "buy": 46800,
-      "mercari": 54500
-    }
+    { "date": "2026-03-01", "sale": 52000, "buy": 42000, "mercari": 46000 },
+    { "date": "2026-03-10", "sale": 54000, "buy": 43000, "mercari": 47500 },
+    { "date": "2026-03-20", "sale": 55500, "buy": 44500, "mercari": 48500 },
+    { "date": "2026-04-02", "sale": 57000, "buy": 47000, "mercari": 50000 },
+    { "date": "2026-04-09", "sale": 57000, "buy": 47000, "mercari": 50000, "psa10Sale": 97300, "psa10Buy": 85000 }
   ],
-  "currentSale": 60500,
-  "currentBuy": 46800,
-  "currentMercari": 54500,
-  "initialSale": 56900,
-  "maxSale": 62200,
+  "currentSale": 57000,
+  "currentBuy": 47000,
+  "currentMercari": 50000,
+  "psa10CurrentSale": 97300,
+  "psa10CurrentBuy": 85000,
+  "initialSale": 52000,
+  "maxSale": 57000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
   "lastUpdated": "2026-04-09"
 }
