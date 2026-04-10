@@ -99,7 +99,7 @@ const SLUG_MAP: Record<string, string> = {
 
 const IMAGE_MAP: Record<string, string> = {
   "mega-greninja-mur": "/images/cards/mega-greninja-mur.png",
-  "mega-greninja-sar": "/images/cards/mega-greninja-sar.jpg",
+  "mega-greninja-sar": "/images/cards/mega-greninja-sar.png",
   "cinccino-sar": "/images/cards/cinccino-sar.png",
   "roxie-performance-sar": "/images/cards/roxie-performance-sar.png",
 };
