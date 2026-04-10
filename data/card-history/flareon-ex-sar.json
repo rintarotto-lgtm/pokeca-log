@@ -5,17 +5,48 @@
   "rarity": "SAR",
   "pack": "テラスタルフェスex",
   "history": [
-    { "date": "2026-03-01", "sale": 5500, "buy": 4500, "mercari": 5200 },
-    { "date": "2026-03-15", "sale": 5800, "buy": 6500, "mercari": 5400 },
-    { "date": "2026-03-25", "sale": 6200, "buy": 6800, "mercari": 5800 },
-    { "date": "2026-04-03", "sale": 6400, "buy": 6900, "mercari": 6000 },
-    { "date": "2026-04-09", "sale": 6500, "buy": 7000, "mercari": 6100 }
+    {
+      "date": "2026-03-01",
+      "sale": 5500,
+      "buy": 4500,
+      "mercari": 5200
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 5800,
+      "buy": 6500,
+      "mercari": 5400
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 6200,
+      "buy": 6800,
+      "mercari": 5800
+    },
+    {
+      "date": "2026-04-03",
+      "sale": 6400,
+      "buy": 6900,
+      "mercari": 6000
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 6500,
+      "buy": 7000,
+      "mercari": 6100
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 6500,
+      "buy": 6900,
+      "mercari": 6200
+    }
   ],
   "currentSale": 6500,
-  "currentBuy": 7000,
-  "currentMercari": 6100,
+  "currentBuy": 6900,
+  "currentMercari": 6200,
   "initialSale": 5500,
   "maxSale": 6500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }

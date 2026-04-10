@@ -5,11 +5,42 @@
   "rarity": "SAR",
   "pack": "スカーレットex",
   "history": [
-    { "date": "2026-03-01", "sale": 2200, "buy": 1500, "mercari": 2000 },
-    { "date": "2026-03-15", "sale": 2300, "buy": 1600, "mercari": 2100 },
-    { "date": "2026-03-25", "sale": 2400, "buy": 1700, "mercari": 2200 },
-    { "date": "2026-04-03", "sale": 2470, "buy": 1750, "mercari": 2280 },
-    { "date": "2026-04-09", "sale": 2500, "buy": 1800, "mercari": 2300 }
+    {
+      "date": "2026-03-01",
+      "sale": 2200,
+      "buy": 1500,
+      "mercari": 2000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 2300,
+      "buy": 1600,
+      "mercari": 2100
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 2400,
+      "buy": 1700,
+      "mercari": 2200
+    },
+    {
+      "date": "2026-04-03",
+      "sale": 2470,
+      "buy": 1750,
+      "mercari": 2280
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 2500,
+      "buy": 1800,
+      "mercari": 2300
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 2500,
+      "buy": 1800,
+      "mercari": 2300
+    }
   ],
   "currentSale": 2500,
   "currentBuy": 1800,
@@ -17,5 +48,5 @@
   "initialSale": 2200,
   "maxSale": 2500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }

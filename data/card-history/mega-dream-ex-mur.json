@@ -5,20 +5,70 @@
   "rarity": "MUR",
   "pack": "MEGAドリームex",
   "history": [
-    { "date": "2026-03-08", "sale": 52000, "buy": 38000, "mercari": 45000, "psa10Sale": 78000, "psa10Buy": 65000 },
-    { "date": "2026-03-15", "sale": 48000, "buy": 35000, "mercari": 42000, "psa10Sale": 80000, "psa10Buy": 68000 },
-    { "date": "2026-03-22", "sale": 42000, "buy": 31000, "mercari": 38000, "psa10Sale": 78000, "psa10Buy": 66000 },
-    { "date": "2026-03-29", "sale": 38000, "buy": 28000, "mercari": 35000, "psa10Sale": 75000, "psa10Buy": 63000 },
-    { "date": "2026-04-05", "sale": 36500, "buy": 27000, "mercari": 33000, "psa10Sale": 73000, "psa10Buy": 62000 },
-    { "date": "2026-04-09", "sale": 35800, "buy": 27000, "mercari": 32500, "psa10Sale": 73000, "psa10Buy": 62000 }
+    {
+      "date": "2026-03-08",
+      "sale": 52000,
+      "buy": 38000,
+      "mercari": 45000,
+      "psa10Sale": 78000,
+      "psa10Buy": 65000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 48000,
+      "buy": 35000,
+      "mercari": 42000,
+      "psa10Sale": 80000,
+      "psa10Buy": 68000
+    },
+    {
+      "date": "2026-03-22",
+      "sale": 42000,
+      "buy": 31000,
+      "mercari": 38000,
+      "psa10Sale": 78000,
+      "psa10Buy": 66000
+    },
+    {
+      "date": "2026-03-29",
+      "sale": 38000,
+      "buy": 28000,
+      "mercari": 35000,
+      "psa10Sale": 75000,
+      "psa10Buy": 63000
+    },
+    {
+      "date": "2026-04-05",
+      "sale": 36500,
+      "buy": 27000,
+      "mercari": 33000,
+      "psa10Sale": 73000,
+      "psa10Buy": 62000
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 35800,
+      "buy": 27000,
+      "mercari": 32500,
+      "psa10Sale": 73000,
+      "psa10Buy": 62000
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 35700,
+      "buy": 26900,
+      "mercari": 32100,
+      "psa10Sale": 72600,
+      "psa10Buy": 62800
+    }
   ],
-  "currentSale": 35800,
-  "currentBuy": 27000,
-  "currentMercari": 32500,
-  "psa10CurrentSale": 73000,
-  "psa10CurrentBuy": 62000,
+  "currentSale": 35700,
+  "currentBuy": 26900,
+  "currentMercari": 32100,
+  "psa10CurrentSale": 72600,
+  "psa10CurrentBuy": 62800,
   "initialSale": 82800,
   "maxSale": 82800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }

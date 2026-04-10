@@ -5,19 +5,54 @@
   "rarity": "SAR",
   "pack": "シャイニートレジャーex",
   "history": [
-    { "date": "2026-03-01", "sale": 11000, "buy": 9500, "mercari": 10000 },
-    { "date": "2026-03-15", "sale": 12500, "buy": 11000, "mercari": 11500 },
-    { "date": "2026-03-25", "sale": 14000, "buy": 12500, "mercari": 13000 },
-    { "date": "2026-04-03", "sale": 16500, "buy": 14500, "mercari": 15500 },
-    { "date": "2026-04-09", "sale": 18000, "buy": 15000, "mercari": 16500, "psa10Sale": 30500, "psa10Buy": 24000 }
+    {
+      "date": "2026-03-01",
+      "sale": 11000,
+      "buy": 9500,
+      "mercari": 10000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 12500,
+      "buy": 11000,
+      "mercari": 11500
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 14000,
+      "buy": 12500,
+      "mercari": 13000
+    },
+    {
+      "date": "2026-04-03",
+      "sale": 16500,
+      "buy": 14500,
+      "mercari": 15500
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 18000,
+      "buy": 15000,
+      "mercari": 16500,
+      "psa10Sale": 30500,
+      "psa10Buy": 24000
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 17900,
+      "buy": 15000,
+      "mercari": 16600,
+      "psa10Sale": 30600,
+      "psa10Buy": 24100
+    }
   ],
-  "currentSale": 18000,
+  "currentSale": 17900,
   "currentBuy": 15000,
-  "currentMercari": 16500,
-  "psa10CurrentSale": 30500,
-  "psa10CurrentBuy": 24000,
+  "currentMercari": 16600,
+  "psa10CurrentSale": 30600,
+  "psa10CurrentBuy": 24100,
   "initialSale": 11000,
   "maxSale": 18000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }

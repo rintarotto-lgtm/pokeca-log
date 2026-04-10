@@ -5,19 +5,54 @@
   "rarity": "SAR",
   "pack": "黒炎の支配者",
   "history": [
-    { "date": "2026-03-01", "sale": 35000, "buy": 29000, "mercari": 33000 },
-    { "date": "2026-03-15", "sale": 37000, "buy": 31000, "mercari": 35000 },
-    { "date": "2026-03-25", "sale": 38500, "buy": 33000, "mercari": 36500 },
-    { "date": "2026-04-03", "sale": 39500, "buy": 36000, "mercari": 38000 },
-    { "date": "2026-04-09", "sale": 40000, "buy": 37000, "mercari": 38500, "psa10Sale": 65900, "psa10Buy": 55000 }
+    {
+      "date": "2026-03-01",
+      "sale": 35000,
+      "buy": 29000,
+      "mercari": 33000
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 37000,
+      "buy": 31000,
+      "mercari": 35000
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 38500,
+      "buy": 33000,
+      "mercari": 36500
+    },
+    {
+      "date": "2026-04-03",
+      "sale": 39500,
+      "buy": 36000,
+      "mercari": 38000
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 40000,
+      "buy": 37000,
+      "mercari": 38500,
+      "psa10Sale": 65900,
+      "psa10Buy": 55000
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 40600,
+      "buy": 36700,
+      "mercari": 38600,
+      "psa10Sale": 66400,
+      "psa10Buy": 54800
+    }
   ],
-  "currentSale": 40000,
-  "currentBuy": 37000,
-  "currentMercari": 38500,
-  "psa10CurrentSale": 65900,
-  "psa10CurrentBuy": 55000,
+  "currentSale": 40600,
+  "currentBuy": 36700,
+  "currentMercari": 38600,
+  "psa10CurrentSale": 66400,
+  "psa10CurrentBuy": 54800,
   "initialSale": 35000,
-  "maxSale": 40000,
+  "maxSale": 40600,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }

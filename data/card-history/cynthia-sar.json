@@ -5,17 +5,48 @@
   "rarity": "SAR",
   "pack": "変幻の仮面",
   "history": [
-    { "date": "2026-03-01", "sale": 2600, "buy": 1800, "mercari": 2400 },
-    { "date": "2026-03-15", "sale": 2750, "buy": 1900, "mercari": 2500 },
-    { "date": "2026-03-25", "sale": 2850, "buy": 2000, "mercari": 2600 },
-    { "date": "2026-04-03", "sale": 2950, "buy": 2100, "mercari": 2700 },
-    { "date": "2026-04-09", "sale": 3000, "buy": 2150, "mercari": 2750 }
+    {
+      "date": "2026-03-01",
+      "sale": 2600,
+      "buy": 1800,
+      "mercari": 2400
+    },
+    {
+      "date": "2026-03-15",
+      "sale": 2750,
+      "buy": 1900,
+      "mercari": 2500
+    },
+    {
+      "date": "2026-03-25",
+      "sale": 2850,
+      "buy": 2000,
+      "mercari": 2600
+    },
+    {
+      "date": "2026-04-03",
+      "sale": 2950,
+      "buy": 2100,
+      "mercari": 2700
+    },
+    {
+      "date": "2026-04-09",
+      "sale": 3000,
+      "buy": 2150,
+      "mercari": 2750
+    },
+    {
+      "date": "2026-04-10",
+      "sale": 3000,
+      "buy": 2200,
+      "mercari": 2800
+    }
   ],
   "currentSale": 3000,
-  "currentBuy": 2150,
-  "currentMercari": 2750,
+  "currentBuy": 2200,
+  "currentMercari": 2800,
   "initialSale": 2600,
   "maxSale": 3000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-04-09"
+  "lastUpdated": "2026-04-10"
 }
