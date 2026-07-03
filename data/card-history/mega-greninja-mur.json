@@ -574,13 +574,19 @@
       "sale": 111500,
       "buy": 74400,
       "mercari": 102000
+    },
+    {
+      "date": "2026-07-03",
+      "sale": 111200,
+      "buy": 75100,
+      "mercari": 102300
     }
   ],
-  "currentSale": 111500,
-  "currentBuy": 74400,
-  "currentMercari": 102000,
+  "currentSale": 111200,
+  "currentBuy": 75100,
+  "currentMercari": 102300,
   "initialSale": 92300,
   "maxSale": 118500,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-07-02"
+  "lastUpdated": "2026-07-03"
 }
