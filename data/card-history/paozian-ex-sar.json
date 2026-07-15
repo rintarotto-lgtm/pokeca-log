@@ -610,6 +610,12 @@
       "sale": 4400,
       "buy": 3000,
       "mercari": 5100
+    },
+    {
+      "date": "2026-07-15",
+      "sale": 4400,
+      "buy": 3000,
+      "mercari": 5100
     }
   ],
   "currentSale": 4400,
@@ -618,5 +624,5 @@
   "initialSale": 24800,
   "maxSale": 24800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-07-14"
+  "lastUpdated": "2026-07-15"
 }
