@@ -1148,15 +1148,23 @@
       "mercari": 50300,
       "psa10Sale": 138700,
       "psa10Buy": 153000
+    },
+    {
+      "date": "2026-08-25",
+      "sale": 54900,
+      "buy": 57600,
+      "mercari": 49500,
+      "psa10Sale": 140700,
+      "psa10Buy": 152600
     }
   ],
-  "currentSale": 54200,
-  "currentBuy": 57800,
-  "currentMercari": 50300,
-  "psa10CurrentSale": 138700,
-  "psa10CurrentBuy": 153000,
+  "currentSale": 54900,
+  "currentBuy": 57600,
+  "currentMercari": 49500,
+  "psa10CurrentSale": 140700,
+  "psa10CurrentBuy": 152600,
   "initialSale": 68000,
   "maxSale": 68000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-08-24"
+  "lastUpdated": "2026-08-25"
 }
