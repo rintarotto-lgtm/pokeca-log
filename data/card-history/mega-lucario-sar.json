@@ -1066,13 +1066,19 @@
       "sale": 8700,
       "buy": 5600,
       "mercari": 8600
+    },
+    {
+      "date": "2026-09-29",
+      "sale": 8600,
+      "buy": 5500,
+      "mercari": 8600
     }
   ],
-  "currentSale": 8700,
-  "currentBuy": 5600,
+  "currentSale": 8600,
+  "currentBuy": 5500,
   "currentMercari": 8600,
   "initialSale": 19800,
   "maxSale": 19800,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-09-28"
+  "lastUpdated": "2026-09-29"
 }
