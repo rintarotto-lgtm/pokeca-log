@@ -6,12 +6,6 @@
   "pack": "シャイニートレジャーex",
   "history": [
     {
-      "date": "2026-03-01",
-      "sale": 11000,
-      "buy": 9500,
-      "mercari": 10000
-    },
-    {
       "date": "2026-03-15",
       "sale": 12500,
       "buy": 11000,
@@ -1436,15 +1430,23 @@
       "mercari": 17200,
       "psa10Sale": 29100,
       "psa10Buy": 22900
+    },
+    {
+      "date": "2026-10-02",
+      "sale": 15400,
+      "buy": 15400,
+      "mercari": 17000,
+      "psa10Sale": 28900,
+      "psa10Buy": 22600
     }
   ],
-  "currentSale": 15300,
-  "currentBuy": 15200,
-  "currentMercari": 17200,
-  "psa10CurrentSale": 29100,
-  "psa10CurrentBuy": 22900,
+  "currentSale": 15400,
+  "currentBuy": 15400,
+  "currentMercari": 17000,
+  "psa10CurrentSale": 28900,
+  "psa10CurrentBuy": 22600,
   "initialSale": 11000,
   "maxSale": 18500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-01"
+  "lastUpdated": "2026-10-02"
 }
