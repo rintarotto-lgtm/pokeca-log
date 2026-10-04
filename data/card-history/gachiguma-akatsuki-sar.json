@@ -6,12 +6,6 @@
   "pack": "ナイトワンダラー",
   "history": [
     {
-      "date": "2026-03-25",
-      "sale": 1040,
-      "buy": 750,
-      "mercari": 950
-    },
-    {
       "date": "2026-04-03",
       "sale": 1070,
       "buy": 780,
@@ -1440,6 +1434,14 @@
       "mercari": 1000,
       "psa10Sale": 6000,
       "psa10Buy": 3700
+    },
+    {
+      "date": "2026-10-04",
+      "sale": 1100,
+      "buy": 800,
+      "mercari": 1000,
+      "psa10Sale": 6000,
+      "psa10Buy": 3700
     }
   ],
   "currentSale": 1100,
@@ -1450,5 +1452,5 @@
   "initialSale": 950,
   "maxSale": 1100,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-03"
+  "lastUpdated": "2026-10-04"
 }
