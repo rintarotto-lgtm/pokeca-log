@@ -6,12 +6,6 @@
   "pack": "ニンジャスピナー",
   "history": [
     {
-      "date": "2026-04-09",
-      "sale": 108000,
-      "buy": 72000,
-      "mercari": 90000
-    },
-    {
       "date": "2026-04-10",
       "sale": 108200,
       "buy": 71900,
@@ -1084,13 +1078,19 @@
       "sale": 110100,
       "buy": 78200,
       "mercari": 105300
+    },
+    {
+      "date": "2026-10-06",
+      "sale": 109700,
+      "buy": 78300,
+      "mercari": 106700
     }
   ],
-  "currentSale": 110100,
-  "currentBuy": 78200,
-  "currentMercari": 105300,
+  "currentSale": 109700,
+  "currentBuy": 78300,
+  "currentMercari": 106700,
   "initialSale": 92300,
   "maxSale": 118500,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-10-05"
+  "lastUpdated": "2026-10-06"
 }
