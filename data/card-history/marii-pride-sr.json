@@ -6,14 +6,6 @@
   "pack": "スタートデッキ100",
   "history": [
     {
-      "date": "2026-04-11",
-      "sale": 18200,
-      "buy": 14900,
-      "mercari": 17200,
-      "psa10Sale": 34400,
-      "psa10Buy": 28200
-    },
-    {
       "date": "2026-04-12",
       "sale": 18100,
       "buy": 15100,
@@ -1444,15 +1436,23 @@
       "mercari": 17600,
       "psa10Sale": 32200,
       "psa10Buy": 30600
+    },
+    {
+      "date": "2026-10-08",
+      "sale": 16200,
+      "buy": 12700,
+      "mercari": 17400,
+      "psa10Sale": 31900,
+      "psa10Buy": 30500
     }
   ],
-  "currentSale": 16300,
-  "currentBuy": 12800,
-  "currentMercari": 17600,
-  "psa10CurrentSale": 32200,
-  "psa10CurrentBuy": 30600,
+  "currentSale": 16200,
+  "currentBuy": 12700,
+  "currentMercari": 17400,
+  "psa10CurrentSale": 31900,
+  "psa10CurrentBuy": 30500,
   "initialSale": 17500,
   "maxSale": 18200,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-07"
+  "lastUpdated": "2026-10-08"
 }
