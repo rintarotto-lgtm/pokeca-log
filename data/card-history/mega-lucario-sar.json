@@ -6,12 +6,6 @@
   "pack": "メガシンフォニア",
   "history": [
     {
-      "date": "2026-04-12",
-      "sale": 10300,
-      "buy": 6000,
-      "mercari": 9100
-    },
-    {
       "date": "2026-04-13",
       "sale": 10400,
       "buy": 6000,
@@ -1084,13 +1078,19 @@
       "sale": 8200,
       "buy": 5400,
       "mercari": 8500
+    },
+    {
+      "date": "2026-10-09",
+      "sale": 8200,
+      "buy": 5400,
+      "mercari": 8400
     }
   ],
   "currentSale": 8200,
   "currentBuy": 5400,
-  "currentMercari": 8500,
+  "currentMercari": 8400,
   "initialSale": 19800,
   "maxSale": 19800,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-10-08"
+  "lastUpdated": "2026-10-09"
 }
