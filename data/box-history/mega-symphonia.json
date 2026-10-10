@@ -6,12 +6,6 @@
   "shrinked": true,
   "history": [
     {
-      "date": "2026-04-13",
-      "sale": 6900,
-      "buy": 5400,
-      "mercari": 6600
-    },
-    {
       "date": "2026-04-14",
       "sale": 6900,
       "buy": 5400,
@@ -1084,13 +1078,19 @@
       "sale": 7800,
       "buy": 6000,
       "mercari": 5400
+    },
+    {
+      "date": "2026-10-10",
+      "sale": 7900,
+      "buy": 6100,
+      "mercari": 5400
     }
   ],
-  "currentSale": 7800,
-  "currentBuy": 6000,
+  "currentSale": 7900,
+  "currentBuy": 6100,
   "currentMercari": 5400,
   "initialSale": 6500,
-  "maxSale": 7800,
+  "maxSale": 7900,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-09"
+  "lastUpdated": "2026-10-10"
 }

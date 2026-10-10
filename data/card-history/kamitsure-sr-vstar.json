@@ -6,14 +6,6 @@
   "pack": "VSTARユニバース",
   "history": [
     {
-      "date": "2026-04-13",
-      "sale": 4300,
-      "buy": 3500,
-      "mercari": 4200,
-      "psa10Sale": 12000,
-      "psa10Buy": 8900
-    },
-    {
       "date": "2026-04-14",
       "sale": 4200,
       "buy": 3500,
@@ -1444,15 +1436,23 @@
       "mercari": 3700,
       "psa10Sale": 10800,
       "psa10Buy": 9700
+    },
+    {
+      "date": "2026-10-10",
+      "sale": 4100,
+      "buy": 3300,
+      "mercari": 3800,
+      "psa10Sale": 10800,
+      "psa10Buy": 9800
     }
   ],
   "currentSale": 4100,
   "currentBuy": 3300,
-  "currentMercari": 3700,
+  "currentMercari": 3800,
   "psa10CurrentSale": 10800,
-  "psa10CurrentBuy": 9700,
+  "psa10CurrentBuy": 9800,
   "initialSale": 4200,
   "maxSale": 4500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-09"
+  "lastUpdated": "2026-10-10"
 }
