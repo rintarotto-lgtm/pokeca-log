@@ -6,14 +6,6 @@
   "pack": "MEGAドリームex",
   "history": [
     {
-      "date": "2026-04-15",
-      "sale": 36500,
-      "buy": 26300,
-      "mercari": 33200,
-      "psa10Sale": 70400,
-      "psa10Buy": 61100
-    },
-    {
       "date": "2026-04-16",
       "sale": 36100,
       "buy": 26400,
@@ -1444,15 +1436,23 @@
       "mercari": 38400,
       "psa10Sale": 53400,
       "psa10Buy": 51000
+    },
+    {
+      "date": "2026-10-12",
+      "sale": 35400,
+      "buy": 28900,
+      "mercari": 37900,
+      "psa10Sale": 53000,
+      "psa10Buy": 51300
     }
   ],
-  "currentSale": 35800,
-  "currentBuy": 28500,
-  "currentMercari": 38400,
-  "psa10CurrentSale": 53400,
-  "psa10CurrentBuy": 51000,
+  "currentSale": 35400,
+  "currentBuy": 28900,
+  "currentMercari": 37900,
+  "psa10CurrentSale": 53000,
+  "psa10CurrentBuy": 51300,
   "initialSale": 82800,
   "maxSale": 82800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-11"
+  "lastUpdated": "2026-10-12"
 }
