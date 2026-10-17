@@ -6,14 +6,6 @@
   "pack": "ポケモンカード151",
   "history": [
     {
-      "date": "2026-04-20",
-      "sale": 64200,
-      "buy": 59800,
-      "mercari": 66900,
-      "psa10Sale": 146200,
-      "psa10Buy": 124000
-    },
-    {
       "date": "2026-04-21",
       "sale": 64100,
       "buy": 60500,
@@ -1444,15 +1436,23 @@
       "mercari": 64700,
       "psa10Sale": 161000,
       "psa10Buy": 140000
+    },
+    {
+      "date": "2026-10-17",
+      "sale": 66700,
+      "buy": 60000,
+      "mercari": 64200,
+      "psa10Sale": 163400,
+      "psa10Buy": 141200
     }
   ],
-  "currentSale": 67000,
-  "currentBuy": 60200,
-  "currentMercari": 64700,
-  "psa10CurrentSale": 161000,
-  "psa10CurrentBuy": 140000,
+  "currentSale": 66700,
+  "currentBuy": 60000,
+  "currentMercari": 64200,
+  "psa10CurrentSale": 163400,
+  "psa10CurrentBuy": 141200,
   "initialSale": 58000,
   "maxSale": 67900,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-16"
+  "lastUpdated": "2026-10-17"
 }
