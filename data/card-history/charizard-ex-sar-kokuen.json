@@ -6,14 +6,6 @@
   "pack": "黒炎の支配者",
   "history": [
     {
-      "date": "2026-04-23",
-      "sale": 41200,
-      "buy": 35400,
-      "mercari": 39300,
-      "psa10Sale": 65600,
-      "psa10Buy": 51800
-    },
-    {
       "date": "2026-04-24",
       "sale": 41600,
       "buy": 35800,
@@ -1444,15 +1436,23 @@
       "mercari": 35300,
       "psa10Sale": 68800,
       "psa10Buy": 65400
+    },
+    {
+      "date": "2026-10-20",
+      "sale": 44200,
+      "buy": 34800,
+      "mercari": 35100,
+      "psa10Sale": 68200,
+      "psa10Buy": 65500
     }
   ],
-  "currentSale": 44800,
-  "currentBuy": 35100,
-  "currentMercari": 35300,
-  "psa10CurrentSale": 68800,
-  "psa10CurrentBuy": 65400,
+  "currentSale": 44200,
+  "currentBuy": 34800,
+  "currentMercari": 35100,
+  "psa10CurrentSale": 68200,
+  "psa10CurrentBuy": 65500,
   "initialSale": 35000,
   "maxSale": 45500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-19"
+  "lastUpdated": "2026-10-20"
 }
