@@ -6,14 +6,6 @@
   "pack": "インフェルノX",
   "history": [
     {
-      "date": "2026-04-24",
-      "sale": 210200,
-      "buy": 200800,
-      "mercari": 204000,
-      "psa10Sale": 624400,
-      "psa10Buy": 580100
-    },
-    {
       "date": "2026-04-25",
       "sale": 211600,
       "buy": 203600,
@@ -1444,15 +1436,23 @@
       "mercari": 209800,
       "psa10Sale": 646400,
       "psa10Buy": 546200
+    },
+    {
+      "date": "2026-10-21",
+      "sale": 183800,
+      "buy": 243400,
+      "mercari": 212900,
+      "psa10Sale": 641300,
+      "psa10Buy": 545800
     }
   ],
-  "currentSale": 182700,
-  "currentBuy": 241800,
-  "currentMercari": 209800,
-  "psa10CurrentSale": 646400,
-  "psa10CurrentBuy": 546200,
+  "currentSale": 183800,
+  "currentBuy": 243400,
+  "currentMercari": 212900,
+  "psa10CurrentSale": 641300,
+  "psa10CurrentBuy": 545800,
   "initialSale": 128000,
   "maxSale": 221500,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-20"
+  "lastUpdated": "2026-10-21"
 }
