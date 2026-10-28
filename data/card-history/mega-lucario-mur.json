@@ -6,14 +6,6 @@
   "pack": "メガブレイブ",
   "history": [
     {
-      "date": "2026-05-01",
-      "sale": 61900,
-      "buy": 42600,
-      "mercari": 51900,
-      "psa10Sale": 103500,
-      "psa10Buy": 87100
-    },
-    {
       "date": "2026-05-02",
       "sale": 61800,
       "buy": 42300,
@@ -1444,15 +1436,23 @@
       "mercari": 52600,
       "psa10Sale": 106400,
       "psa10Buy": 83400
+    },
+    {
+      "date": "2026-10-28",
+      "sale": 68200,
+      "buy": 38300,
+      "mercari": 52100,
+      "psa10Sale": 105400,
+      "psa10Buy": 82500
     }
   ],
   "currentSale": 68200,
-  "currentBuy": 38000,
-  "currentMercari": 52600,
-  "psa10CurrentSale": 106400,
-  "psa10CurrentBuy": 83400,
+  "currentBuy": 38300,
+  "currentMercari": 52100,
+  "psa10CurrentSale": 105400,
+  "psa10CurrentBuy": 82500,
   "initialSale": 67000,
   "maxSale": 73600,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-10-27"
+  "lastUpdated": "2026-10-28"
 }
