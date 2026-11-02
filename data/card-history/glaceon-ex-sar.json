@@ -6,14 +6,6 @@
   "pack": "テラスタルフェスex",
   "history": [
     {
-      "date": "2026-05-06",
-      "sale": 8700,
-      "buy": 5400,
-      "mercari": 7900,
-      "psa10Sale": 14300,
-      "psa10Buy": 11500
-    },
-    {
       "date": "2026-05-07",
       "sale": 8800,
       "buy": 5400,
@@ -1444,15 +1436,23 @@
       "mercari": 8300,
       "psa10Sale": 13700,
       "psa10Buy": 11900
+    },
+    {
+      "date": "2026-11-02",
+      "sale": 7000,
+      "buy": 4400,
+      "mercari": 8300,
+      "psa10Sale": 13700,
+      "psa10Buy": 11800
     }
   ],
   "currentSale": 7000,
   "currentBuy": 4400,
   "currentMercari": 8300,
   "psa10CurrentSale": 13700,
-  "psa10CurrentBuy": 11900,
+  "psa10CurrentBuy": 11800,
   "initialSale": 9000,
   "maxSale": 9000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-11-01"
+  "lastUpdated": "2026-11-02"
 }
