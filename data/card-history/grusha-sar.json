@@ -6,12 +6,6 @@
   "pack": "スノーハザード",
   "history": [
     {
-      "date": "2026-05-09",
-      "sale": 5300,
-      "buy": 3000,
-      "mercari": 4800
-    },
-    {
       "date": "2026-05-10",
       "sale": 5300,
       "buy": 3000,
@@ -1084,13 +1078,19 @@
       "sale": 4800,
       "buy": 3000,
       "mercari": 4100
+    },
+    {
+      "date": "2026-11-05",
+      "sale": 4800,
+      "buy": 3000,
+      "mercari": 4000
     }
   ],
   "currentSale": 4800,
   "currentBuy": 3000,
-  "currentMercari": 4100,
+  "currentMercari": 4000,
   "initialSale": 79800,
   "maxSale": 79800,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-11-04"
+  "lastUpdated": "2026-11-05"
 }
