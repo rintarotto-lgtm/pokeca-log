@@ -6,14 +6,6 @@
   "pack": "バイオレットex",
   "history": [
     {
-      "date": "2026-05-12",
-      "sale": 17400,
-      "buy": 12300,
-      "mercari": 16000,
-      "psa10Sale": 45400,
-      "psa10Buy": 36600
-    },
-    {
       "date": "2026-05-13",
       "sale": 17600,
       "buy": 12300,
@@ -1444,15 +1436,23 @@
       "mercari": 14400,
       "psa10Sale": 47800,
       "psa10Buy": 34900
+    },
+    {
+      "date": "2026-11-08",
+      "sale": 18600,
+      "buy": 10600,
+      "mercari": 14500,
+      "psa10Sale": 48100,
+      "psa10Buy": 35100
     }
   ],
-  "currentSale": 18800,
-  "currentBuy": 10700,
-  "currentMercari": 14400,
-  "psa10CurrentSale": 47800,
-  "psa10CurrentBuy": 34900,
+  "currentSale": 18600,
+  "currentBuy": 10600,
+  "currentMercari": 14500,
+  "psa10CurrentSale": 48100,
+  "psa10CurrentBuy": 35100,
   "initialSale": 16500,
   "maxSale": 19900,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-11-07"
+  "lastUpdated": "2026-11-08"
 }
