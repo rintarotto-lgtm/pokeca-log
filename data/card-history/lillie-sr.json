@@ -6,12 +6,6 @@
   "pack": "ドリームリーグ",
   "history": [
     {
-      "date": "2026-05-13",
-      "sale": 55700,
-      "buy": 41600,
-      "mercari": 49500
-    },
-    {
       "date": "2026-05-14",
       "sale": 56400,
       "buy": 41600,
@@ -1084,13 +1078,19 @@
       "sale": 55800,
       "buy": 45400,
       "mercari": 52000
+    },
+    {
+      "date": "2026-11-09",
+      "sale": 56500,
+      "buy": 44700,
+      "mercari": 51900
     }
   ],
-  "currentSale": 55800,
-  "currentBuy": 45400,
-  "currentMercari": 52000,
+  "currentSale": 56500,
+  "currentBuy": 44700,
+  "currentMercari": 51900,
   "initialSale": 40000,
   "maxSale": 58600,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-11-08"
+  "lastUpdated": "2026-11-09"
 }
