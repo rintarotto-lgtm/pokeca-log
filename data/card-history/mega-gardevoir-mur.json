@@ -6,14 +6,6 @@
   "pack": "メガシンフォニア",
   "history": [
     {
-      "date": "2026-05-20",
-      "sale": 57800,
-      "buy": 50300,
-      "mercari": 53000,
-      "psa10Sale": 151400,
-      "psa10Buy": 140300
-    },
-    {
       "date": "2026-05-21",
       "sale": 58200,
       "buy": 50000,
@@ -1444,15 +1436,23 @@
       "mercari": 45400,
       "psa10Sale": 151700,
       "psa10Buy": 152800
+    },
+    {
+      "date": "2026-11-16",
+      "sale": 51600,
+      "buy": 55600,
+      "mercari": 45700,
+      "psa10Sale": 150900,
+      "psa10Buy": 154700
     }
   ],
-  "currentSale": 52000,
-  "currentBuy": 56400,
-  "currentMercari": 45400,
-  "psa10CurrentSale": 151700,
-  "psa10CurrentBuy": 152800,
+  "currentSale": 51600,
+  "currentBuy": 55600,
+  "currentMercari": 45700,
+  "psa10CurrentSale": 150900,
+  "psa10CurrentBuy": 154700,
   "initialSale": 68000,
   "maxSale": 68000,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-11-15"
+  "lastUpdated": "2026-11-16"
 }
