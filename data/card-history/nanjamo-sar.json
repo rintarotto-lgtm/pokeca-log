@@ -6,12 +6,6 @@
   "pack": "クレイバースト",
   "history": [
     {
-      "date": "2026-05-23",
-      "sale": 60700,
-      "buy": 58500,
-      "mercari": 52600
-    },
-    {
       "date": "2026-05-24",
       "sale": 60100,
       "buy": 59300,
@@ -1084,13 +1078,19 @@
       "sale": 75700,
       "buy": 65700,
       "mercari": 43900
+    },
+    {
+      "date": "2026-11-19",
+      "sale": 76500,
+      "buy": 66300,
+      "mercari": 43500
     }
   ],
-  "currentSale": 75700,
-  "currentBuy": 65700,
-  "currentMercari": 43900,
+  "currentSale": 76500,
+  "currentBuy": 66300,
+  "currentMercari": 43500,
   "initialSale": 35000,
-  "maxSale": 75900,
+  "maxSale": 76500,
   "source": "各種カードショップ・メルカリの公開情報を元に作成",
-  "lastUpdated": "2026-11-18"
+  "lastUpdated": "2026-11-19"
 }
