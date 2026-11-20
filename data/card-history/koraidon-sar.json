@@ -6,14 +6,6 @@
   "pack": "スカーレットex",
   "history": [
     {
-      "date": "2026-05-24",
-      "sale": 4600,
-      "buy": 2900,
-      "mercari": 4300,
-      "psa10Sale": 11600,
-      "psa10Buy": 8000
-    },
-    {
       "date": "2026-05-25",
       "sale": 4600,
       "buy": 2900,
@@ -1444,15 +1436,23 @@
       "mercari": 5200,
       "psa10Sale": 11300,
       "psa10Buy": 7200
+    },
+    {
+      "date": "2026-11-20",
+      "sale": 4900,
+      "buy": 2900,
+      "mercari": 5200,
+      "psa10Sale": 11200,
+      "psa10Buy": 7100
     }
   ],
   "currentSale": 4900,
   "currentBuy": 2900,
   "currentMercari": 5200,
-  "psa10CurrentSale": 11300,
-  "psa10CurrentBuy": 7200,
+  "psa10CurrentSale": 11200,
+  "psa10CurrentBuy": 7100,
   "initialSale": 4500,
   "maxSale": 5200,
   "source": "各種カードショップ・メルカリ・スニダンの公開情報を元に作成",
-  "lastUpdated": "2026-11-19"
+  "lastUpdated": "2026-11-20"
 }
